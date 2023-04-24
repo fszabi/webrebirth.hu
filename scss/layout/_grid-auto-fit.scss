@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+.grid-auto-fit {
+  display: grid;
+  gap: var(--grid-gap, $grid-gap);
+  grid-template-columns: repeat(auto-fit, 
+  minmax(min($auto-fit-min, 100%), $auto-fit-max));
+}
+

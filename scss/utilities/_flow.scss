@@ -1,0 +1,19 @@
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 1rem);
+}
+
+.flow[data-spacing="small"] {
+  --flow-spacer: .25rem;
+}
+
+.flow[data-spacing="medium"] {
+  --flow-spacer: 1rem;
+}
+
+.flow[data-spacing="large"] {
+  --flow-spacer: 2rem;
+}
+
+.flow[data-spacing="extra-large"] {
+  --flow-spacer: 3rem;
+}
