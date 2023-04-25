@@ -5,9 +5,16 @@
   flex-wrap: wrap;
   column-gap: var(--flex-column-gap, $flex-group-gap);
   row-gap: var(--flex-row-gap, $flex-group-gap);
-  width: fit-content;
 }
 
 .flex-group.mx-auto {
   justify-content: center;
+}
+
+.flex-group.space-between {
+  justify-content: space-between;
+}
+
+.flex-group.align-center {
+  align-items: center;
 }

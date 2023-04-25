@@ -1,42 +1,48 @@
-window.addEventListener("DOMContentLoaded", (event) => {
-  // Navbar shrink function
-  var navbarShrink = function () {
-    const navbarCollapsible = document.body.querySelector("#mainNav");
-    if (!navbarCollapsible) {
-      return;
-    }
-    if (window.scrollY === 0) {
-      navbarCollapsible.classList.remove("navbar-shrink");
-    } else {
-      navbarCollapsible.classList.add("navbar-shrink");
-    }
-  };
+const header = document.body.querySelector(".primary-header");
 
-  // Shrink the navbar
-  navbarShrink();
+const navlink = document.body.querySelectorAll(".primary-navigation a");
 
-  // Shrink the navbar when page is scrolled
-  document.addEventListener("scroll", navbarShrink);
+const logo = document.body.querySelector(".logo");
 
-  // Activate Bootstrap scrollspy on the main nav element
-  const mainNav = document.body.querySelector("#mainNav");
-  if (mainNav) {
-    new bootstrap.ScrollSpy(document.body, {
-      target: "#mainNav",
-      rootMargin: "0px 0px -40%",
-    });
+window.onscroll = function () {
+  navColor();
+};
+
+function navColor() {
+  if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+    white();
+  } else {
+    transparent();
+  }
+}
+
+function white() {
+  header.style.backgroundColor = "white";
+
+  for (var i = 0; i < navlink.length; i++) {
+    navlink[i].style.color = "black";
   }
 
-  // Collapse responsive navbar when toggler is visible
-  const navbarToggler = document.body.querySelector(".navbar-toggler");
-  const responsiveNavItems = [].slice.call(
-    document.querySelectorAll("#navbarResponsive .nav-link")
-  );
-  responsiveNavItems.map(function (responsiveNavItem) {
-    responsiveNavItem.addEventListener("click", () => {
-      if (window.getComputedStyle(navbarToggler).display !== "none") {
-        navbarToggler.click();
-      }
-    });
-  });
-});
+  logo.style.filter =
+    "invert(99%) sepia(1%) saturate(2%) hue-rotate(313deg) brightness(106%) contrast(100%)";
+}
+
+function transparent() {
+  header.style.backgroundColor = "transparent";
+
+  for (var i = 0; i < navlink.length; i++) {
+    navlink[i].style.color = "white";
+  }
+
+  logo.style.filter =
+    "invert(0%) sepia(100%) saturate(7441%) hue-rotate(178deg) brightness(109%) contrast(114%)";
+}
+
+// homeButton.addEventListener("click", () => {
+//   scrollTop();
+// });
+
+// function scrollTop() {
+//   document.body.scrollTop = 0; // Safari
+//   document.documentElement.scrollTop = 0; // Firefox, Chrome, Opera
+// }

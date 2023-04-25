@@ -9,11 +9,12 @@
 
   a {
     text-decoration: none;
-    color: clr(neutral, 900);
+    color: clr(neutral, 100);
     font: {
       family: $ff-accent;
       size: fs(600);
     }
+    transition: color 250ms;
 
     &:is(:hover, :focus) {
       opacity: .7;

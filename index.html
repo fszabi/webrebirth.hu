@@ -22,19 +22,291 @@
 
     <link rel="stylesheet" href="./scss/main.scss" />
   </head>
+
   <body>
     <header class="primary-header">
-      <img src="" alt="" />
+      <div class="container flex-group space-between align-center">
+        <img class="logo" src="assets/logo.svg" alt="webgeting logo" />
 
-      <nav class="primary-navigation">
-        <ul class="flex-group mx-auto">
-          <li><a href="#about">Rólam</a></li>
-          <li><a href="#services">Szolgáltatásaim</a></li>
-          <li><a href="#prices">Árak</a></li>
-        </ul>
-      </nav>
+        <nav class="primary-navigation">
+          <ul class="flex-group mx-auto">
+            <li><a href="#about">Rólam</a></li>
+            <li><a href="#services">Szolgáltatásaim</a></li>
+            <li><a href="#prices">Árak</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+    <main>
+      <section class="hero section-xl | clr-neutral-100 text-center">
+        <div class="container">
+          <h1 class="fs-900 ff-cursive margin-block-end-48">
+            Homecooked meals delivered straight to your door
+          </h1>
+          <div class="flex-group mx-auto">
+            <button class="btn btn--primary">Place order</button>
+            <a href="#about" class="btn btn--secondary">More info</a>
+          </div>
+        </div>
+      </section>
 
-    <script type="module" src="main.js"></script>
+      <section id="about" class="about section">
+        <div class="container">
+          <div class="even-columns">
+            <div>
+              <picture>
+                <source srcset="assets/about.avif" type="image/avif" />
+                <source srcset="assets/about.webp" type="image/webp" />
+                <img
+                  class="shift-up box-shadow-1"
+                  src="assets/about.jpg"
+                  alt=""
+                />
+              </picture>
+            </div>
+            <div class="flow">
+              <header class="section-header">
+                <h2 class="fs-800 ff-cursive clr-primary-500">
+                  Amazing food without the hassle
+                </h2>
+                <p class="fs-600 text-uppercase">
+                  We do all the work, so all you have to do is sit back and
+                  enjoy
+                </p>
+              </header>
+
+              <p class="lead">It's ready to go</p>
+              <p>
+                Whether it's for a romantic evening with your significant other
+                or if you're hosting a large party and need food for a big
+                group, we're here to help!
+              </p>
+              <p>
+                We can cater to whatever your needs are, and ensure that our
+                delicious food is delivered at the perfect moment, fresh, hot,
+                and ready to eat exactly when you need it to be there.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section | bg-neutral-200 text-center">
+        <div class="container" data-type="wide">
+          <header class="section-header" data-decoration="true">
+            <h2 class="fs-800 clr-primary-500 ff-cursive">
+              We make great food
+            </h2>
+            <p class="fs-600 uppercase">
+              Cooking is our passion with quality and freshness being of the
+              utmost importance
+            </p>
+          </header>
+
+          <div class="grid-auto-fit">
+            <div>
+              <h3 class="fs-500 fw-700 clr-neutral-900 text-uppercase">
+                Fresh ingredients
+              </h3>
+              <p>
+                We take food seriously, and the first thing to making great food
+                is using fresh ingredients. If the ingredients don't meet our
+                standard, we don't use them.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="fs-500 fw-700 clr-neutral-900 text-uppercase">
+                Professional Chef
+              </h3>
+              <p>
+                Chef Wellington is a professionally trained chef who's worked in
+                top kitchens around the world
+              </p>
+            </div>
+
+            <div>
+              <h3 class="fs-500 fw-700 clr-neutral-900 text-uppercase">
+                Ready for you
+              </h3>
+              <p>
+                Stop using services where you have to re-heat your food. We get
+                it to your door ready to eat, without sacrificing any quality at
+                all.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="fs-500 fw-700 clr-neutral-900 text-uppercase">
+                Made with love
+              </h3>
+              <p>
+                Food is our passion, and we infuse that love and passion into
+                every single plate that we make and deliver straight to your
+                home.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="meals"
+        class="meals section | clr-neutral-100 bg-neutral-400 text-center"
+      >
+        <div class="container" data-type="wide">
+          <header class="section-header">
+            <h2 class="fs-800 ff-cursive">Some of our meals</h2>
+            <p class="fs-600 text-uppercase">
+              Here are a few of our delicious, home-cooked meals that are sure
+              to please your taste buds.
+            </p>
+          </header>
+
+          <div class="even-columns">
+            <div>
+              <figure class="interactive-figure">
+                <picture>
+                  <source srcset="assets/meal-01.avif" type="image/avif" />
+                  <source srcset="assets/meal-01.webp" type="image/webp" />
+                  <img
+                    src="assets/meal-01.jpg"
+                    loading="lazy"
+                    alt="salmon and veges"
+                  />
+                </picture>
+                <figcaption class="padding-32">
+                  <h3 class="fs-500 fw-700 text-uppercase">
+                    Pan-seared salmon and veges
+                  </h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div>
+              <figure class="interactive-figure">
+                <picture>
+                  <source srcset="assets/meal-02.avif" type="image/avif" />
+                  <source srcset="assets/meal-02.webp" type="image/webp" />
+                  <img
+                    src="assets/meal-02.jpg"
+                    loading="lazy"
+                    alt="taco with beef and veges"
+                  />
+                </picture>
+                <figcaption class="padding-32">
+                  <h3 class="fs-500 fw-700 text-uppercase">
+                    Taco with beef and vegetables
+                  </h3>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div>
+              <figure class="interactive-figure">
+                <picture>
+                  <source srcset="assets/meal-03.avif" type="image/avif" />
+                  <source srcset="assets/meal-03.webp" type="image/webp" />
+                  <img src="assets/meal-03.jpg" loading="lazy" alt="mussels" />
+                </picture>
+                <figcaption class="padding-32">
+                  <h3 class="fs-500 fw-700 text-uppercase">Mussels</h3>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section | text-center">
+        <div class="container" data-type="wide">
+          <header class="section-header">
+            <h2 class="fs-800 ff-cursive clr-primary-500">
+              What our clients are saying about us
+            </h2>
+          </header>
+
+          <div class="even-columns">
+            <div class="card | box-shadow-1" data-type="testimonial">
+              <picture>
+                <source srcset="assets/testimonial-01.avif" type="image/avif" />
+                <source srcset="assets/testimonial-01.webp" type="image/webp" />
+                <img
+                  src="assets/testimonial-01.jpg"
+                  alt="A man standing outside"
+                />
+              </picture>
+
+              <div class="card__body">
+                <p>
+                  John Wellington and his team make the most amazing food. Every
+                  single time I've ordered, I've been blown-away by the quality.
+                  You can tell they only use fresh ingredients and put a lot of
+                  love into every single meal they make! You really can't ask
+                  for anything more, it's always fantastic.
+                </p>
+              </div>
+              <div class="padding-16 bg-neutral-200">
+                <p class="fs-500 clr-primary-500 fw-700">John Deer</h3>
+                <p class="fs-300">Lover of good food</p>
+              </div>
+            </div>
+
+            <div class="card | box-shadow-1" data-type="testimonial">
+              <picture>
+                <source srcset="assets/testimonial-02.avif" type="image/avif" />
+                <source srcset="assets/testimonial-02.webp" type="image/webp" />
+                <img src="assets/testimonial-02.jpg" alt="A woman holding her phone" />
+              </picture>
+
+              <div class="card__body">
+                <p>
+                  I'm so happy that I found John Wellington! The food is on par
+                  with some of the best restaurants I've ever eaten at, but from
+                  the comfort of my own home. Every single time I order, it's
+                  mouth-wateringly delicious.
+                </p>
+              </div>
+              <div class="padding-16 bg-neutral-200">
+                <p class="fs-500 clr-primary-500 fw-700">Marie Condo</h3>
+                <p class="fs-300">Foodie</p>
+              </div>
+            </div>
+
+            <div class="card | box-shadow-1" data-type="testimonial">
+              <picture>
+                <source srcset="assets/testimonial-03.avif" type="image/avif" />
+                <source srcset="assets/testimonial-03.webp" type="image/webp" />
+                <img src="assets/testimonial-03.jpg" alt="A woman eating a sandwich" />
+              </picture>
+
+              <div class="card__body">
+                <p>
+                  From simple meals to some of the most extravagant things I've
+                  ever eaten, John and his team always deliver. Every time I order
+                  something new, I just can't wait for it to be delivered and I
+                  know how mouth-wateringly delicious it's going to be. If you
+                  like good food, you have to give it a try!
+                </p>
+              </div>  
+              <div class="padding-16 bg-neutral-200">
+                <p class="fs-500 clr-primary-500 fw-700">Sam Reinhert</h3>
+                <p class="fs-300">Good food enthusiast</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="primary-footer section | bg-neutral-900 clr-neutral-100 text-center">
+      <div class="container | flow">
+        <p class="fw-700">Homecooked mealsdelivered straight to your door</p>
+        <p>©2022 Persronal Chef Services</p>
+        <p>555 Boulevard Anywhere, Montreal, Quebec, J1S 1S9 | 123-555-1234</p> 
+      </div>
+    </footer>
+
+     <!-- JS -->
+    <script src="main.js"></script>
   </body>
 </html>

@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+.primary-header {
+  padding: size(16);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: background-color 250ms;
+}
