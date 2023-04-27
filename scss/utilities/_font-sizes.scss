@@ -4,7 +4,11 @@
   .fs-#{$size-name} {
     font-size: $size-value;
     @if $size-name > 600 {
-      line-height: 1.1;
+      line-height: 1.2;
+    } 
+
+    @if $size-name > 800 {
+      line-height: 1.3;
     }
   }
 } 

@@ -8,6 +8,10 @@
 
     <!-- *Google Fonts -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
     <!-- *Font Awesome -->
 
     <link
@@ -25,8 +29,10 @@
 
   <body>
     <header class="primary-header">
-      <div class="container flex-group space-between align-center">
-        <img class="logo" src="assets/logo.svg" alt="webgeting logo" />
+      <div class="container flex-group align-center justify-between">
+        <!-- <img class="logo" src="assets/logo.svg" alt="webgeting logo" /> -->
+
+        <p class="logo">Webdesight</p>
 
         <nav class="primary-navigation">
           <ul class="flex-group mx-auto">
@@ -39,13 +45,13 @@
     </header>
     <main>
       <section class="hero section-xl | clr-neutral-100 text-center">
-        <div class="container">
-          <h1 class="fs-900 ff-cursive margin-block-end-48">
-            Homecooked meals delivered straight to your door
+        <div class="container flow" data-spacing="extra-large">
+          <h1 class="fs-900 ff-accent">
+            Web<span>design</span>, reszponzív <span>weboldalak</span> 
           </h1>
+          <p class="fs-600">Ha szükséged van egy webdesign-ra, esetleg egy működőképes reszponzív weboldalra, akkor jó helyen jársz!</p>
           <div class="flex-group mx-auto">
-            <button class="btn btn--primary">Place order</button>
-            <a href="#about" class="btn btn--secondary">More info</a>
+            <a href="#about" class="btn btn--primary | ff-accent">Ajánlatkérés</a>
           </div>
         </div>
       </section>
@@ -66,7 +72,7 @@
             </div>
             <div class="flow">
               <header class="section-header">
-                <h2 class="fs-800 ff-cursive clr-primary-500">
+                <h2 class="fs-800 ff-accent clr-primary-500">
                   Amazing food without the hassle
                 </h2>
                 <p class="fs-600 text-uppercase">
@@ -94,7 +100,7 @@
       <section id="services" class="section | bg-neutral-200 text-center">
         <div class="container" data-type="wide">
           <header class="section-header" data-decoration="true">
-            <h2 class="fs-800 clr-primary-500 ff-cursive">
+            <h2 class="fs-800 clr-primary-500 ff-accent">
               We make great food
             </h2>
             <p class="fs-600 uppercase">
@@ -156,7 +162,7 @@
       >
         <div class="container" data-type="wide">
           <header class="section-header">
-            <h2 class="fs-800 ff-cursive">Some of our meals</h2>
+            <h2 class="fs-800 ff-accent">Some of our meals</h2>
             <p class="fs-600 text-uppercase">
               Here are a few of our delicious, home-cooked meals that are sure
               to please your taste buds.
@@ -221,7 +227,7 @@
       <section id="testimonials" class="section | text-center">
         <div class="container" data-type="wide">
           <header class="section-header">
-            <h2 class="fs-800 ff-cursive clr-primary-500">
+            <h2 class="fs-800 ff-accent clr-primary-500">
               What our clients are saying about us
             </h2>
           </header>
@@ -307,6 +313,6 @@
     </footer>
 
      <!-- JS -->
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>

@@ -1,5 +1,11 @@
+@use "../abstracts/" as *;
+
 .hero {
-  background-image: url("../../assets/hero-bg.jpg");
-  background-size: cover;
-  background-position: center;
+  background: radial-gradient(circle at -7% 50%, #ff6635 0%, #ff6635 15.9%, #ffaf02 15.9%, #ffaf02 24.4%, rgb(10, 10, 10) 0%, rgb(64, 64, 64) 90.2%);
+
+  span {
+    background: linear-gradient(305deg, #ff6635 0%, #ffaf02 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }

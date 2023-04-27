@@ -5,16 +5,34 @@
   flex-wrap: wrap;
   column-gap: var(--flex-column-gap, $flex-group-gap);
   row-gap: var(--flex-row-gap, $flex-group-gap);
+
+  &.flex-row {
+    flex-direction: row;
+  }
+
+  &.flex-col {
+    flex-direction: column; 
+    --flex-row-gap: 2rem;
+
+    ul {
+      --flex-row-gap: #{$flex-group-gap};
+    }
+  }
+
+  &.mx-auto {
+    justify-content: center;
+  }
+
+  &.justify-between {
+    justify-content: space-between;
+  }
+
+  &.justify-center {
+    justify-content: center;
+  }
+
+  &.align-center {
+    align-items: center;
+  }
 }
 
-.flex-group.mx-auto {
-  justify-content: center;
-}
-
-.flex-group.space-between {
-  justify-content: space-between;
-}
-
-.flex-group.align-center {
-  align-items: center;
-}

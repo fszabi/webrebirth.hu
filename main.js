@@ -1,6 +1,12 @@
 const header = document.body.querySelector(".primary-header");
 
-const navlink = document.body.querySelectorAll(".primary-navigation a");
+const headerFlex = document.body.querySelector(".primary-header .flex-group");
+
+const hamburger = document.querySelector(".hamburger");
+
+const navlist = document.querySelector("ul");
+
+const navlinks = document.body.querySelectorAll(".primary-navigation a");
 
 const logo = document.body.querySelector(".logo");
 
@@ -8,8 +14,12 @@ window.onscroll = function () {
   navColor();
 };
 
+window.onload = changeAlignment;
+
+window.addEventListener("resize", changeAlignment);
+
 function navColor() {
-  if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+  if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
     white();
   } else {
     transparent();
@@ -17,32 +27,33 @@ function navColor() {
 }
 
 function white() {
-  header.style.backgroundColor = "white";
+  header.style.backgroundColor = "#fff";
+  logo.style.color = "#5C5C5C";
 
-  for (var i = 0; i < navlink.length; i++) {
-    navlink[i].style.color = "black";
-  }
-
-  logo.style.filter =
-    "invert(99%) sepia(1%) saturate(2%) hue-rotate(313deg) brightness(106%) contrast(100%)";
+  navlinks.forEach((navlink) => {
+    navlink.style.color = "#5C5C5C";
+  });
 }
 
 function transparent() {
   header.style.backgroundColor = "transparent";
+  logo.style.color = "#fff";
 
-  for (var i = 0; i < navlink.length; i++) {
-    navlink[i].style.color = "white";
-  }
-
-  logo.style.filter =
-    "invert(0%) sepia(100%) saturate(7441%) hue-rotate(178deg) brightness(109%) contrast(114%)";
+  navlinks.forEach((navlink) => {
+    navlink.style.color = "#fff";
+  });
 }
 
-// homeButton.addEventListener("click", () => {
-//   scrollTop();
-// });
-
-// function scrollTop() {
-//   document.body.scrollTop = 0; // Safari
-//   document.documentElement.scrollTop = 0; // Firefox, Chrome, Opera
-// }
+function changeAlignment() {
+  if (window.innerWidth >= 560) {
+    headerFlex.classList.remove("justify-center");
+    headerFlex.classList.remove("flex-col");
+    headerFlex.classList.add("justify-between");
+    headerFlex.classList.add("flex-row");
+  } else if (window.innerWidth < 560) {
+    headerFlex.classList.remove("justify-between");
+    headerFlex.classList.remove("flex-row");
+    headerFlex.classList.add("justify-center");
+    headerFlex.classList.add("flex-col");
+  }
+}

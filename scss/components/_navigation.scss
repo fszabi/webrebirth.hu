@@ -10,15 +10,13 @@
   a {
     text-decoration: none;
     color: clr(neutral, 100);
-    font: {
-      family: $ff-accent;
-      size: fs(600);
-    }
+    font-size: fs(300);
+    font-family: $ff-accent;
     transition: color 250ms;
+    font-weight: $fw-700;
 
     &:is(:hover, :focus) {
-      opacity: .7;
-      text-decoration: underline;
+      color: clr(primary, 400) !important;
     }
   }
 }
