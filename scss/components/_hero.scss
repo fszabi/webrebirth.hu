@@ -1,7 +1,11 @@
 @use "../abstracts/" as *;
 
 .hero {
-  background: radial-gradient(circle at -7% 50%, #ff6635 0%, #ff6635 15.9%, #ffaf02 15.9%, #ffaf02 24.4%, rgb(10, 10, 10) 0%, rgb(64, 64, 64) 90.2%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.425)),
+  url("../assets/web.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   span {
     background: linear-gradient(305deg, #ff6635 0%, #ffaf02 100%);

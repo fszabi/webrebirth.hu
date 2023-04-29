@@ -2,15 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Webdesight</title>
+
+     <!-- *Favicons -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- *Google Fonts -->
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
     <!-- *Font Awesome -->
 
@@ -24,15 +33,15 @@
 
     <!-- *SCSS -->
 
-    <link rel="stylesheet" href="./scss/main.scss" />
+    <link rel="stylesheet" href="scss/main.scss" />
   </head>
 
   <body>
     <header class="primary-header">
       <div class="container flex-group align-center justify-between">
-        <!-- <img class="logo" src="assets/logo.svg" alt="webgeting logo" /> -->
+        <img class="logo" src="assets/logo.svg" alt="webdesight logo" />
 
-        <p class="logo">Webdesight</p>
+        <!-- <p class="logo">Webdesight</p> -->
 
         <nav class="primary-navigation">
           <ul class="flex-group mx-auto">
@@ -44,95 +53,80 @@
       </div>
     </header>
     <main>
-      <section class="hero section-xl | clr-neutral-100 text-center">
+      <section class="hero section-xl |  clr-neutral-100 text-center">
         <div class="container flow" data-spacing="extra-large">
-          <h1 class="fs-900 ff-accent">
+          <h1 class="fs-900 ff-accent fw-700">
             Web<span>design</span>, reszponzív <span>weboldalak</span> 
           </h1>
-          <p class="fs-600">Ha szükséged van egy webdesign-ra, esetleg egy működőképes reszponzív weboldalra, akkor jó helyen jársz!</p>
+          <p class="fs-500 ff-accent fw-700">Webdesignok készítése, reszponzív weboldalak fejlesztése és üzemeltetése</p>
           <div class="flex-group mx-auto">
             <a href="#about" class="btn btn--primary | ff-accent">Ajánlatkérés</a>
           </div>
         </div>
       </section>
 
-      <section id="about" class="about section">
+      <section id="about" class="about section | bg-neutral-900">
         <div class="container">
           <div class="even-columns">
             <div>
               <picture>
-                <source srcset="assets/about.avif" type="image/avif" />
-                <source srcset="assets/about.webp" type="image/webp" />
+                <source srcset="assets/co.webp" type="image/webp" />
                 <img
                   class="shift-up box-shadow-1"
-                  src="assets/about.jpg"
+                  src="assets/co.jpg"
                   alt=""
                 />
               </picture>
             </div>
             <div class="flow">
-              <header class="section-header">
-                <h2 class="fs-800 ff-accent clr-primary-500">
-                  Amazing food without the hassle
+              <header class="section-header" data-decoration="true">
+                <h2 class="fs-700 ff-accent fw-700 clr-primary-500">
+                  Rólam
                 </h2>
-                <p class="fs-600 text-uppercase">
-                  We do all the work, so all you have to do is sit back and
-                  enjoy
-                </p>
               </header>
 
-              <p class="lead">It's ready to go</p>
-              <p>
-                Whether it's for a romantic evening with your significant other
-                or if you're hosting a large party and need food for a big
-                group, we're here to help!
+              <p class="fs-500">
+                Forgács Szabolcs vagyok, a Webdesight alapítója.
+                Több mint 4 éve, hogy megismerkedtem a webfejlesztés világával, ami már abban a pillanatban magával ragadott.
+                A célom az, hogy a vállalkozásod forgalmát, illetve ügyfélkörét megnöveljem.
               </p>
-              <p>
-                We can cater to whatever your needs are, and ensure that our
-                delicious food is delivered at the perfect moment, fresh, hot,
-                and ready to eat exactly when you need it to be there.
+              <p class="fs-500">
+                Az igényeid alapján egy reszponzív, modern, illetve letiszult weboldalt tudok neked létrehozni.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="services" class="section | bg-neutral-200 text-center">
+      <section id="services" class="section | bg-neutral-700 text-center">
         <div class="container" data-type="wide">
           <header class="section-header" data-decoration="true">
-            <h2 class="fs-800 clr-primary-500 ff-accent">
-              We make great food
+            <h2 class="fs-800 clr-primary-500 ff-accent fw-700">
+              Szolgáltatásaim
             </h2>
-            <p class="fs-600 uppercase">
-              Cooking is our passion with quality and freshness being of the
-              utmost importance
-            </p>
           </header>
 
           <div class="grid-auto-fit">
             <div>
-              <h3 class="fs-500 fw-700 clr-neutral-900 text-uppercase">
-                Fresh ingredients
+              <h3 class="fs-500 fw-700 ff-accent text-uppercase">
+                Webdesign
               </h3>
               <p>
-                We take food seriously, and the first thing to making great food
-                is using fresh ingredients. If the ingredients don't meet our
-                standard, we don't use them.
+                Egy szimpla design, ami alapján létrehozható egy weboldal.
               </p>
             </div>
 
             <div>
-              <h3 class="fs-500 fw-700 clr-neutral-900 text-uppercase">
-                Professional Chef
+              <h3 class="fs-500 fw-700 ff-accent text-uppercase">
+                Webfejlesztés
               </h3>
               <p>
-                Chef Wellington is a professionally trained chef who's worked in
-                top kitchens around the world
+                Cégek, vagy akár magánszemélyek számára egy reszponzív, modern weboldal.
               </p>
             </div>
 
             <div>
-              <h3 class="fs-500 fw-700 clr-neutral-900 text-uppercase">
+              <h3 class="fs-500 fw-700 ff-accent text-uppercase">
                 Ready for you
               </h3>
               <p>
@@ -143,7 +137,7 @@
             </div>
 
             <div>
-              <h3 class="fs-500 fw-700 clr-neutral-900 text-uppercase">
+              <h3 class="fs-500 fw-700 ff-accent text-uppercase">
                 Made with love
               </h3>
               <p>
@@ -158,11 +152,11 @@
 
       <section
         id="meals"
-        class="meals section | clr-neutral-100 bg-neutral-400 text-center"
+        class="meals section | bg-neutral-900 clr-neutral-100 text-center"
       >
         <div class="container" data-type="wide">
           <header class="section-header">
-            <h2 class="fs-800 ff-accent">Some of our meals</h2>
+            <h2 class="fs-800 ff-accent fw-700">Some of our meals</h2>
             <p class="fs-600 text-uppercase">
               Here are a few of our delicious, home-cooked meals that are sure
               to please your taste buds.
@@ -224,7 +218,7 @@
         </div>
       </section>
 
-      <section id="testimonials" class="section | text-center">
+      <section id="testimonials" class="section | bg-neutral-700 text-center">
         <div class="container" data-type="wide">
           <header class="section-header">
             <h2 class="fs-800 ff-accent clr-primary-500">

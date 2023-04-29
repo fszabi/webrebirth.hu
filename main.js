@@ -20,28 +20,18 @@ window.addEventListener("resize", changeAlignment);
 
 function navColor() {
   if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
-    white();
+    black();
   } else {
     transparent();
   }
 }
 
-function white() {
-  header.style.backgroundColor = "#fff";
-  logo.style.color = "#5C5C5C";
-
-  navlinks.forEach((navlink) => {
-    navlink.style.color = "#5C5C5C";
-  });
+function black() {
+  header.style.backgroundColor = "#212121";
 }
 
 function transparent() {
   header.style.backgroundColor = "transparent";
-  logo.style.color = "#fff";
-
-  navlinks.forEach((navlink) => {
-    navlink.style.color = "#fff";
-  });
 }
 
 function changeAlignment() {

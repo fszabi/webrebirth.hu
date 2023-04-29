@@ -1,8 +1,9 @@
-$ff-sans: 'Merriweather Sans', sans-serif;
-$ff-serif: 'Merriweather', serif;
+// $ff-sans: 'Lato', sans-serif;
+$ff-sans: 'Poppins', sans-serif;
+$ff-sans-2: 'Montserrat', sans-serif;
 
-$ff-base: $ff-serif;
-$ff-accent: $ff-sans;
+$ff-base: $ff-sans;
+$ff-accent: $ff-sans-2;
 
 $fw-400: 400;
 $fw-700: 700;
@@ -10,6 +11,7 @@ $fw-700: 700;
 $font-sizes: (
   900: clamp(2.8rem, 0.5rem + 10vw, 5rem),
   800: clamp(2.5rem, 0.5rem + 7vw, 3.75rem),
+  700: clamp(2rem, 0.5rem + 5vw, 2.5rem),
   600: clamp(1.4rem, 0.5rem + 3vw, 1.6875rem), 
   500: 1.3125rem,
   400: 1.125rem,

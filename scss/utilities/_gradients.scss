@@ -1,0 +1,9 @@
+@use "../abstracts" as *;
+
+@each $gradient, $gradient-type in $gradients {
+  @each $type, $value in $gradient-type {
+    .#{$gradient}-gradient-#{$type} {
+      background: $value;
+    }
+  }
+}
