@@ -19,7 +19,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
 
     <!-- *Font Awesome -->
 
@@ -37,7 +37,7 @@
   </head>
 
   <body>
-    <header class="primary-header">
+    <header class="primary-header | box-shadow-1">
       <div class="container flex-group align-center justify-between">
         <img class="logo" src="assets/logo.svg" alt="webdesight logo" />
 
@@ -58,7 +58,8 @@
           <h1 class="fs-900 ff-accent fw-700">
             Web<span>design</span>, reszponzív <span>weboldalak</span> 
           </h1>
-          <p class="fs-500 ff-accent fw-700">Webdesignok készítése, reszponzív weboldalak fejlesztése és üzemeltetése</p>
+          <!-- <p class="fs-500 ff-accent fw-700">Webdesignok készítése, reszponzív weboldalak fejlesztése és üzemeltetése</p> -->
+          <p class="fs-500 ff-accent fw-700">Egyedi weboldalak minden ügyfélnek - az igényeid szerint készítek számodra egy egyedi weboldalt, amely segít növelni a globális elérhetőségedet és az üzleti lehetőségeidet.</p>
           <div class="flex-group mx-auto">
             <a href="#about" class="btn btn--primary | ff-accent">Ajánlatkérés</a>
           </div>
@@ -72,7 +73,7 @@
               <picture>
                 <source srcset="assets/co.webp" type="image/webp" />
                 <img
-                  class="shift-up box-shadow-1"
+                  class="shift-up border-radius-1"
                   src="assets/co.jpg"
                   alt=""
                 />
@@ -85,137 +86,173 @@
                 </h2>
               </header>
 
-              <p class="fs-500">
-                Forgács Szabolcs vagyok, a Webdesight alapítója.
+              <p>
+                <span class="fs-500 fw-700 text-italic ">Forgács Szabolcs</span> <br> vagyok, a Webdesight alapítója.
                 Több mint 4 éve, hogy megismerkedtem a webfejlesztés világával, ami már abban a pillanatban magával ragadott.
-                A célom az, hogy a vállalkozásod forgalmát, illetve ügyfélkörét megnöveljem.
               </p>
-              <p class="fs-500">
-                Az igényeid alapján egy reszponzív, modern, illetve letiszult weboldalt tudok neked létrehozni.
+              <p>A célom az, hogy a vállalkozásod forgalmát, illetve ügyfélkörét megnöveljem. Nincs még weboldalad, esetleg nem vagy megelégedve a jelenlegivel? Az egyszerű weboldalaktól kezdve a kreatívabb, modernebb weboldalakig a segítségedre leszek.</p>
+              <p>
+                A folyamat során a te igényeid szerint alakul majd a fejlesztés a korai fázistól kezdve a végsőkig, ezáltal a végeredmény garantáltan elnyeri majd a tetszésedet.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="services" class="section | bg-neutral-700 text-center">
+      <section id="services" class="section | bg-neutral-700">
         <div class="container" data-type="wide">
-          <header class="section-header" data-decoration="true">
+          <header class="section-header text-center" data-decoration="true">
             <h2 class="fs-800 clr-primary-500 ff-accent fw-700">
               Szolgáltatásaim
             </h2>
           </header>
 
-          <div class="grid-auto-fit">
-            <div>
-              <h3 class="fs-500 fw-700 ff-accent text-uppercase">
-                Webdesign
-              </h3>
-              <p>
-                Egy szimpla design, ami alapján létrehozható egy weboldal.
-              </p>
+          <div class="even-columns flow-row">
+            <div class="even-columns align-center">
+              <div class="padding-32">
+                <h3 class="fs-600 fw-700 ff-accent text-uppercase">
+                  Webdesign
+                </h3>
+                <p>
+                  Egy jó webdesign célja a felhasználói élmény javítása és az információk hatékony átadása. Egy modern webdesign-t gyakran az egyszerűség és az átláthatóság jellemez, amelynek segítségével a felhasználók könnyedén navigálhatnak az oldalon és megtalálhatják az általuk keresett információkat. A reszponzívitás, vagyis a mobilbarát tervezés további fontos tényező, hiszen a mobiltelefonok és a táblagépek használata egyre nő, így az oldalaknak alkalmazkodniuk kell a különböző eszközök képernyőméretéhez és felbontásához. 
+                </p>
+              </div>
+              <div>
+                <picture>
+                  <source srcset="" type="image/webp" />
+                  <img
+                    class="border-radius-1"
+                    src="assets/design.jpeg"
+                    alt=""
+                  />
+                </picture>
+              </div>
             </div>
 
-            <div>
-              <h3 class="fs-500 fw-700 ff-accent text-uppercase">
-                Webfejlesztés
-              </h3>
-              <p>
-                Cégek, vagy akár magánszemélyek számára egy reszponzív, modern weboldal.
-              </p>
+            <div class="even-columns align-center | mirrored">
+              <div class="padding-32">
+                <h3 class="fs-600 fw-700 ff-accent text-uppercase">
+                  Webfejlesztés
+                </h3>
+                <p>
+                  <!-- Cégek, vagy akár magánszemélyek számára egy reszponzív, modern weboldal. -->
+                  Napjainkban már világszerte elérhető az internet, így
+                  annak segítségével könnyedén eljuthatsz a globális piacra
+                  Az interneten való megjelenés egyik legfontosabb eleme egy modern, stílusos weboldal.
+                  Személyreszabott megoldásokkal segítek céljaid elérésében. Egy sikeres, a jövőben fejlődni akaró vállalkozásoknak több kell egy átlagos weboldalnál.
+                </p>
+              </div>
+              <div>
+                <picture>
+                  <source srcset="" type="image/webp" />
+                  <img
+                    class="border-radius-1"
+                    src="assets/web3.jpeg"
+                    alt=""
+                  />
+                </picture>
+              </div>
             </div>
 
-            <div>
-              <h3 class="fs-500 fw-700 ff-accent text-uppercase">
-                Ready for you
-              </h3>
-              <p>
-                Stop using services where you have to re-heat your food. We get
-                it to your door ready to eat, without sacrificing any quality at
-                all.
-              </p>
+            <div class="even-columns align-center">
+              <div class="padding-32">
+                <h3 class="fs-600 fw-700 ff-accent text-uppercase">
+                  SEO
+                </h3>
+                <p>
+                  Az egyik legjobb digitális marketing stratégia. A keresőmotorok organikus találatainak javításával növelhető a weboldalad forgalma. Egyik kulcsfontosságú eleme a kulcsszókutatás, amely során megkeresem a legfontosabb kulcsszavakat és kifejezéseket, amelyekre a célközönséged keresni fog a keresőkben. Összefoglalva a weboldalad jelentősen jobban látható lesz a keresőmotorok által kínált listákban, így növelheted az ügyfélbázisodat.
+                </p>
+              </div>
+              <div>
+                <picture>
+                  <source srcset="" type="image/webp" />
+                  <img
+                    class="border-radius-1"
+                    src="assets/seo2.jpeg"
+                    alt=""
+                  />
+                </picture>
+              </div>
             </div>
 
-            <div>
-              <h3 class="fs-500 fw-700 ff-accent text-uppercase">
-                Made with love
-              </h3>
-              <p>
-                Food is our passion, and we infuse that love and passion into
-                every single plate that we make and deliver straight to your
-                home.
-              </p>
+            <div class="even-columns align-center | mirrored">
+              <div class="padding-32">
+                <h3 class="fs-600 fw-700 ff-accent text-uppercase">
+                  Karbantartás
+                </h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio iure quod atque laboriosam hic tempora, placeat saepe doloremque maiores voluptates repellat non error facilis omnis aut ratione quos praesentium voluptatum?
+                  Nemo, laboriosam nam reiciendis voluptates rem ipsam aspernatur molestiae, deleniti quas quis veniam ex quia a quae vitae atque eligendi consequatur nostrum neque! Ex tempora tempore aut adipisci, consequatur minus.
+                </p>
+              </div>
+              <div>
+                <picture>
+                  <source srcset="" type="image/webp" />
+                  <img
+                    class="border-radius-1"
+                    src="assets/maintenance2.jpeg"
+                    alt=""
+                  />
+                </picture>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section
-        id="meals"
-        class="meals section | bg-neutral-900 clr-neutral-100 text-center"
+        id="prices"
+        class="prices section | bg-neutral-900 clr-neutral-100 text-center"
       >
-        <div class="container" data-type="wide">
-          <header class="section-header">
-            <h2 class="fs-800 ff-accent fw-700">Some of our meals</h2>
-            <p class="fs-600 text-uppercase">
-              Here are a few of our delicious, home-cooked meals that are sure
-              to please your taste buds.
+      <div class="container" data-type="wide">
+        <header class="section-header text-center" data-decoration="true">
+          <h2 class="fs-800 clr-primary-500 ff-accent fw-700">
+            Szolgáltatásaim
+          </h2>
+        </header>
+
+        <div class="grid-auto-fit">
+          <div>
+            <h3 class="fs-600 fw-700 ff-accent text-uppercase">
+              Webdesign
+            </h3>
+            <p>
+              Egy jó webdesign célja a felhasználói élmény javítása és az információk hatékony átadása. A modern webdesign-t gyakran az egyszerűség és az átláthatóság jellemzi, amelynek segítségével a felhasználók könnyedén navigálhatnak az oldalon és megtalálhatják az általuk keresett információkat. A reszponzívitás, vagyis a mobilbarát tervezés további fontos tényező, hiszen a mobiltelefonok és a táblagépek használata egyre nő, így az oldalaknak alkalmazkodniuk kell a különböző eszközök képernyőméretéhez és felbontásához.
             </p>
-          </header>
+          </div>
 
-          <div class="even-columns">
-            <div>
-              <figure class="interactive-figure">
-                <picture>
-                  <source srcset="assets/meal-01.avif" type="image/avif" />
-                  <source srcset="assets/meal-01.webp" type="image/webp" />
-                  <img
-                    src="assets/meal-01.jpg"
-                    loading="lazy"
-                    alt="salmon and veges"
-                  />
-                </picture>
-                <figcaption class="padding-32">
-                  <h3 class="fs-500 fw-700 text-uppercase">
-                    Pan-seared salmon and veges
-                  </h3>
-                </figcaption>
-              </figure>
-            </div>
+          <div>
+            <h3 class="fs-600 fw-700 ff-accent text-uppercase">
+              Webfejlesztés
+            </h3>
+            <p>
+              <!-- Cégek, vagy akár magánszemélyek számára egy reszponzív, modern weboldal. -->
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto recusandae in a quo voluptatem earum quod sint soluta asperiores? Distinctio deserunt vel iusto deleniti debitis! Quas molestias repudiandae laborum temporibus!
+              Reiciendis necessitatibus quasi ad quas iure minus consequuntur quae temporibus dolores distinctio? Assumenda deleniti, placeat et iste officia nulla quae? Tempore labore ipsam error numquam placeat est dolor suscipit possimus.
+            </p> 
+          </div>
 
-            <div>
-              <figure class="interactive-figure">
-                <picture>
-                  <source srcset="assets/meal-02.avif" type="image/avif" />
-                  <source srcset="assets/meal-02.webp" type="image/webp" />
-                  <img
-                    src="assets/meal-02.jpg"
-                    loading="lazy"
-                    alt="taco with beef and veges"
-                  />
-                </picture>
-                <figcaption class="padding-32">
-                  <h3 class="fs-500 fw-700 text-uppercase">
-                    Taco with beef and vegetables
-                  </h3>
-                </figcaption>
-              </figure>
-            </div>
+          <div>
+            <h3 class="fs-600 fw-700 ff-accent text-uppercase">
+              SEO
+            </h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque quasi libero assumenda! Modi tempore minus, optio saepe sunt iste nobis, ad distinctio perferendis fugit dolorum voluptas illo, libero officiis rem?
+              Nemo consectetur natus unde facilis porro. Obcaecati placeat similique reiciendis dolorum! Incidunt error sapiente earum est qui porro expedita. Corporis quam voluptatem eveniet maxime alias tenetur magnam itaque voluptas placeat.
+            </p>
+          </div>
 
-            <div>
-              <figure class="interactive-figure">
-                <picture>
-                  <source srcset="assets/meal-03.avif" type="image/avif" />
-                  <source srcset="assets/meal-03.webp" type="image/webp" />
-                  <img src="assets/meal-03.jpg" loading="lazy" alt="mussels" />
-                </picture>
-                <figcaption class="padding-32">
-                  <h3 class="fs-500 fw-700 text-uppercase">Mussels</h3>
-                </figcaption>
-              </figure>
-            </div>
+          <div>
+            <h3 class="fs-600 fw-700 ff-accent text-uppercase">
+              Karbantartás
+            </h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio iure quod atque laboriosam hic tempora, placeat saepe doloremque maiores voluptates repellat non error facilis omnis aut ratione quos praesentium voluptatum?
+              Nemo, laboriosam nam reiciendis voluptates rem ipsam aspernatur molestiae, deleniti quas quis veniam ex quia a quae vitae atque eligendi consequatur nostrum neque! Ex tempora tempore aut adipisci, consequatur minus.
+            </p>
           </div>
         </div>
+      </div>
       </section>
 
       <section id="testimonials" class="section | bg-neutral-700 text-center">

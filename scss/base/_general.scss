@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
 }
 
 body {
@@ -10,6 +11,6 @@ body {
     size: fs(400);
     weight: $fw-400;
   }
-  line-height: 1.5;
+  line-height: 1.8;
   color: clr(neutral, 100);
 }

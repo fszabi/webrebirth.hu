@@ -35,12 +35,12 @@ function transparent() {
 }
 
 function changeAlignment() {
-  if (window.innerWidth >= 560) {
+  if (window.innerWidth >= 680) {
     headerFlex.classList.remove("justify-center");
     headerFlex.classList.remove("flex-col");
     headerFlex.classList.add("justify-between");
     headerFlex.classList.add("flex-row");
-  } else if (window.innerWidth < 560) {
+  } else if (window.innerWidth < 680) {
     headerFlex.classList.remove("justify-between");
     headerFlex.classList.remove("flex-row");
     headerFlex.classList.add("justify-center");

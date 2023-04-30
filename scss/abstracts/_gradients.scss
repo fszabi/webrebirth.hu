@@ -4,5 +4,7 @@ $gradients: (
     400: radial-gradient(circle at -7% 50%, #ff6635 0%, #ff6635 15.9%, #ffaf02 15.9%, #ffaf02 24.4%, rgb(10, 10, 10) 0%, rgb(64, 64, 64) 90.2%),
   ),
   linear: (
+    400: linear-gradient(305deg, #ff6635 0%, #ffaf02 100%),
+    900: linear-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.425)),
   ),
 );

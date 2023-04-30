@@ -1,6 +1,12 @@
 @use "../abstracts/" as *;
 
 .section-header {
+  h2 {
+    background: gradients(linear, 400);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   &:has(p) {
     margin-block-end: size(36);
   }
@@ -18,6 +24,12 @@
     margin-block-start: size(36);
 
     .text-center & {
+      margin-inline: auto;
+    }
+  }
+
+  &.text-center {
+    &[data-decoration="true"]::after {
       margin-inline: auto;
     }
   }

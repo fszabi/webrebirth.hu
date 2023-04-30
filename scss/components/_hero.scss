@@ -1,14 +1,14 @@
 @use "../abstracts/" as *;
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.425), rgba(0, 0, 0, 0.425)),
+  background-image: gradients(linear, 900),
   url("../assets/web.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   span {
-    background: linear-gradient(305deg, #ff6635 0%, #ffaf02 100%);
+    background: gradients(linear, 400);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

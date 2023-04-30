@@ -1,5 +1,6 @@
 @use 'sass:map';
 @use "colors" as *;
+@use "gradients" as *;
 @use "typography" as *;
 @use "sizes" as *;
 
@@ -8,6 +9,14 @@
     @return map.get($colors, $color, $shade);
   } @else {
     @error '$colors does not have that color!';
+  }
+}
+
+@function gradients($gradient, $type) {
+  @if map.has-key($gradients, $gradient, $type) {
+    @return map.get($gradients, $gradient, $type);
+  } @else {
+    @error '$gradients does not have that gradient!';
   }
 }
 
