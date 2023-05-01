@@ -28,10 +28,12 @@ function navColor() {
 
 function black() {
   header.style.backgroundColor = "#212121";
+  header.classList.add("box-shadow-1");
 }
 
 function transparent() {
   header.style.backgroundColor = "transparent";
+  header.classList.remove("box-shadow-1");
 }
 
 function changeAlignment() {
@@ -46,4 +48,21 @@ function changeAlignment() {
     headerFlex.classList.add("justify-center");
     headerFlex.classList.add("flex-col");
   }
+}
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("slides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "flex";
+  setTimeout(showSlides, 5000);
 }

@@ -12,11 +12,13 @@
     color: clr(neutral, 100);
     font-size: fs(300);
     font-family: $ff-accent;
-    transition: color 250ms;
     font-weight: $fw-700;
 
-    &:is(:hover, :focus) {
-      color: clr(primary, 400) !important;
+    &:hover,
+    &:focus {
+      background: gradients(linear, 400);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 }
