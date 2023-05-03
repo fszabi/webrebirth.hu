@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 .hero {
-  background-image: gradients(linear, 900),
+  background: gradients(linear, 900),
   url("../assets/web.jpeg");
   background-position: center;
   background-repeat: no-repeat;

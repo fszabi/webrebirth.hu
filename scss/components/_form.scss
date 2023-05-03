@@ -1,0 +1,63 @@
+@use "../abstracts/" as *;
+
+input, textarea, select, button {
+  font: inherit;
+  color: inherit;
+}
+
+.form-container {
+  display: grid;
+  overflow: hidden;
+  grid-template-rows: minmax(200px, 1fr);
+
+  @include mq(medium) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-bg {
+  background-image: url("../assets/form.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-content {
+  padding: $form-content-padding * 2;
+  background-color: clr(neutral, 700);
+}
+
+.form-group {
+	display: flex;
+  gap: $flex-group-gap;
+}
+
+input, textarea {
+	border: 1px solid #ccc;
+	display: block;
+	width: 100%;
+	height: 40px;
+	padding: 0 20px;
+	border-radius: 20px;
+	background: none;
+  transition: border 250ms;
+	&:focus {
+		border: 1px solid #ff6635;
+    outline: none;
+	}
+}
+
+textarea {
+  background: none;
+  width: 100%;
+  height: 100px;
+
+  @include mq(medium) {
+    height: 300px;
+  }
+}
+
+
+
+
+

@@ -2,6 +2,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 * {
@@ -15,5 +17,4 @@ picture,
 svg {
   display: block;
   max-width: 100%;
-  object-fit: cover;
 }
