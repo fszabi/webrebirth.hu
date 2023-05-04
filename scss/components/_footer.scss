@@ -1,0 +1,20 @@
+@use "../abstracts/" as *;
+
+.primary-footer {
+  --grid-gap: #{size(80)};
+
+  --flex-column-gap: #{size(48)};
+  --flex-row-gap: #{size(48)};
+
+  h2, h3 {
+    background: gradients(linear, 400);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+}

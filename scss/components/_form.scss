@@ -16,10 +16,14 @@ input, textarea, select, button {
 }
 
 .form-bg {
-  background-image: url("../assets/form.jpeg");
+  background-image: url("../assets/contact.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.form-bg {
+  background-image: -webkit-image-set(url("../assets/contact.webp") 1x);
 }
 
 .form-content {
@@ -30,6 +34,11 @@ input, textarea, select, button {
 .form-group {
 	display: flex;
   gap: $flex-group-gap;
+}
+
+label {
+  width: 100%;
+  display: block;
 }
 
 input, textarea {

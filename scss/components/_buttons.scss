@@ -9,12 +9,31 @@
   text-transform: uppercase;
   text-decoration: none;
   font-weight: $fw-700;
-  transition: 250ms;
   border-radius: 50px;
   
   &--primary {
     color: clr(neutral, 900);
-    background-color: clr(primary, 400);
+    background-image: gradients(linear, 400);
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 50px;
+      background-image: gradients(linear, 100);
+      z-index: -1;
+      transition: opacity 150ms linear;
+      opacity: 0;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
   }
 
   &--secondary {

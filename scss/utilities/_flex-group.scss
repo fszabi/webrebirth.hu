@@ -12,7 +12,6 @@
 
   &.flex-col {
     flex-direction: column; 
-    --flex-row-gap: 2rem;
 
     ul {
       --flex-row-gap: #{$flex-group-gap};
