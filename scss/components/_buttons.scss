@@ -15,7 +15,7 @@
     color: clr(neutral, 900);
     background-image: gradients(linear, 400);
     position: relative;
-    z-index: 1;
+    z-index: 0;
 
     &::before {
       position: absolute;
@@ -43,10 +43,39 @@
     background-color: transparent;
     outline: var(--outline-size) solid clr(neutral, 100);
     outline-offset: calc(var(--outline-size) * -1);
+
+    &:is(:hover, :focus) {
+      background-color: clr(neutral, 100);
+      color: clr(neutral, 900);
+    }
   }
 
-  &:is(:hover, :focus) {
-    background-color: clr(neutral, 100);
-    color: clr(neutral, 900);
+  &--hamburger {
+    background: transparent;
+    border: 5px solid var(--hamburger-color, #000);
+    border-radius: 1rem;
+    padding: 0;
+    overflow: hidden;
+
+    --hamburger-color: white;
+
+    .hamburger-icon {
+      transition: translate 1s, rotate 1s;
+    }
+
+    &:hover .hamburger-icon {
+      translate: 17px -15px;
+      rotate: .125turn;
+    }
+
+    .line {
+      stroke-dasharray: 60 31 60 1000;
+      transition: 1s;
+    }
+
+    &:hover .line {
+      stroke-dasharray: 60 105 60 1000;
+      stroke-dashoffset: -90;
+    }
   }
 }

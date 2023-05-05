@@ -62,12 +62,24 @@
       <div class="container flex-group align-center justify-between">
         <img class="logo" src="assets/logo.svg" alt="webdesight logo" />
 
+        <button class="btn btn--hamburger">
+          <svg class="hamburger-icon" fill="none" stroke="var(--hamburger-color)" viewBox="-10 -10 120 120" width="256">
+            <path class="line" stroke-width="10" 
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+            d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70">
+
+            </path>  
+          </svg> 
+        </button>
+
         <nav class="primary-navigation">
-          <ul class="flex-group mx-auto">
+          <ul class="flex-group justify-center align-center mx-auto">
             <li><a href="#about">Rólam</a></li>
             <li><a href="#services">Szolgáltatásaim</a></li>
             <li><a href="#references">Referenciák</a></li>
             <li><a href="#prices">Árak</a></li>
+            <li><a href="#contacts">Elérhetőségek</a></li>
           </ul>
         </nav>
       </div>
@@ -106,7 +118,7 @@
               </picture>
             </div>
             <div class="flow">
-              <header class="section-header" data-decoration="true">
+              <header class="section-header">
                 <h2 class="fs-700 ff-accent fw-700 clr-primary-500">Rólam</h2>
               </header>
 
@@ -135,7 +147,7 @@
 
       <section id="services" class="section | bg-neutral-900">
         <div class="container" data-type="wide">
-          <header class="section-header text-center" data-decoration="true">
+          <header class="section-header text-center">
             <h2 class="fs-700 clr-primary-500 ff-accent fw-700">
               Szolgáltatásaim
             </h2>
@@ -260,7 +272,7 @@
         class="section | bg-neutral-700 clr-neutral-100 text-center"
       >
         <div class="container" data-type="wide">
-          <header class="section-header text-center" data-decoration="true">
+          <header class="section-header text-center">
             <h2 class="fs-700 clr-primary-500 ff-accent fw-700">Referenciák</h2>
           </header>
 
