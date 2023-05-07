@@ -1,10 +1,12 @@
-const header = document.body.querySelector(".primary-header");
+const header = document.querySelector(".primary-header");
 
-const headerFlex = document.body.querySelector(".primary-header .flex-group");
+const headerFlex = document.querySelector(".primary-header .flex-group");
 
-const navFlex = document.body.querySelector(".primary-navigation .flex-group");
+const nav = document.querySelector(".primary-navigation");
 
-const hamburger = document.querySelector(".hamburger");
+const navFlex = document.querySelector(".primary-navigation .flex-group");
+
+const hamburger = document.querySelector(".btn--hamburger");
 
 const navlist = document.querySelector("ul");
 
@@ -16,9 +18,11 @@ window.onscroll = function () {
   navColor();
 };
 
-window.onload = changeAlignment;
+// window.onload = changeAlignment;
 
-window.addEventListener("resize", changeAlignment);
+// window.addEventListener("resize", changeAlignment);
+
+// Header
 
 function navColor() {
   if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
@@ -38,27 +42,29 @@ function transparent() {
   header.classList.remove("box-shadow-1");
 }
 
-function changeAlignment() {
-  if (window.innerWidth >= 940) {
-    headerFlex.classList.remove("justify-center");
-    headerFlex.classList.remove("flex-col");
-    headerFlex.classList.add("justify-between");
-    headerFlex.classList.add("flex-row");
-  } else if (window.innerWidth < 940) {
-    headerFlex.classList.remove("justify-between");
-    headerFlex.classList.remove("flex-row");
-    headerFlex.classList.add("justify-center");
-    headerFlex.classList.add("flex-col");
-  }
+// function changeAlignment() {
+//   if (window.innerWidth >= 940) {
+//     headerFlex.classList.remove("justify-center");
+//     headerFlex.classList.remove("flex-col");
+//     headerFlex.classList.add("justify-between");
+//     headerFlex.classList.add("flex-row");
+//   } else if (window.innerWidth < 940) {
+//     headerFlex.classList.remove("justify-between");
+//     headerFlex.classList.remove("flex-row");
+//     headerFlex.classList.add("justify-center");
+//     headerFlex.classList.add("flex-col");
+//   }
 
-  if (window.innerWidth >= 500) {
-    navFlex.classList.remove("flex-col");
-    navFlex.classList.add("flex-row");
-  } else if (window.innerWidth < 500) {
-    navFlex.classList.remove("flex-row");
-    navFlex.classList.add("flex-col");
-  }
-}
+//   if (window.innerWidth >= 500) {
+//     navFlex.classList.remove("flex-col");
+//     navFlex.classList.add("flex-row");
+//   } else if (window.innerWidth < 500) {
+//     navFlex.classList.remove("flex-row");
+//     navFlex.classList.add("flex-col");
+//   }
+// }
+
+// Slider
 
 let slideIndex = 0;
 showSlides();
@@ -76,3 +82,24 @@ function showSlides() {
   slides[slideIndex - 1].style.display = "flex";
   setTimeout(showSlides, 3000);
 }
+
+// Hamburger
+
+hamburger.addEventListener("click", () => {
+  const currentState = hamburger.getAttribute("data-state");
+  const visibility = nav.getAttribute("data-visible");
+
+  if (!currentState || currentState === "closed") {
+    hamburger.setAttribute("data-state", "opened");
+    hamburger.setAttribute("aria-expanded", "true");
+  } else {
+    hamburger.setAttribute("data-state", "closed");
+    hamburger.setAttribute("aria-expanded", "false");
+  }
+
+  if (visibility === "false") {
+    nav.setAttribute("data-visible", "true");
+  } else {
+    nav.setAttribute("data-visible", "false");
+  }
+});

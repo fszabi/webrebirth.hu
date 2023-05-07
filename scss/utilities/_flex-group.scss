@@ -6,6 +6,10 @@
   column-gap: var(--flex-column-gap, $flex-group-gap);
   row-gap: var(--flex-row-gap, $flex-group-gap);
 
+  .primary-header & {
+    flex-wrap: nowrap;
+  }
+
   &.flex-row {
     flex-direction: row;
   }

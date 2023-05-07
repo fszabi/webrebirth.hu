@@ -62,8 +62,8 @@
       <div class="container flex-group align-center justify-between">
         <img class="logo" src="assets/logo.svg" alt="webdesight logo" />
 
-        <button class="btn btn--hamburger">
-          <svg class="hamburger-icon" fill="none" stroke="var(--hamburger-color)" viewBox="-10 -10 120 120" width="256">
+        <button class="btn btn--hamburger" aria-controls="primary-navigation" aria-expanded="false">
+          <svg class="hamburger-icon" fill="none" stroke="var(--hamburger-color)" viewBox="-10 -10 120 120" width="32">
             <path class="line" stroke-width="10" 
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -73,8 +73,8 @@
           </svg> 
         </button>
 
-        <nav class="primary-navigation">
-          <ul class="flex-group justify-center align-center mx-auto">
+        <nav>
+          <ul data-visible="false" id="primary-navigation" class="primary-navigation flex-group">
             <li><a href="#about">Rólam</a></li>
             <li><a href="#services">Szolgáltatásaim</a></li>
             <li><a href="#references">Referenciák</a></li>
@@ -431,7 +431,7 @@
       </section>
     </main>
     <footer
-      class="primary-footer section | bg-neutral-700 clr-neutral-100 text-center"
+      id="contacts" class="primary-footer section | bg-neutral-700 clr-neutral-100 text-center"
     >
       <div class="container | flex-group flex-col flow">
         <div>
@@ -451,10 +451,10 @@
               </div>
             </div>
 
-            <nav class="secondary-navigation | flow">
+            <nav class="flow">
               <h3 class="fs-500 fw-700 ff-accent clr-primary-400">Navigáció</h3>
             
-              <ul>
+              <ul class="secondary-navigation">
                 <li><a href="#about">Rólam</a></li>
                 <li><a href="#services">Szolgáltatásaim</a></li>
                 <li><a href="#references">Referenciák</a></li>

@@ -1,12 +1,29 @@
 @use "../abstracts/" as *;
 
+.primary-navigation {
+  flex-direction: column;
+  transform: translateX(100%);
+  position: fixed;
+  z-index: 1000;
+  inset: 0 0 0 30%;
+  padding: 10rem 2em;
+  
+  @include mq(medium) {
+    position: unset;
+    flex-direction: row;
+    transform: translateX(0);
+    padding: 0;
+  }
+
+  @media only screen and (max-width: 74.6em) {
+    transition: transform 350ms, background-color 350ms;
+  }
+}
+
 .primary-navigation,
 .secondary-navigation {
   --flex-column-gap: #{size(48)};
-
-  ul {
-    list-style: none;
-  }
+  list-style: none;
 
   a {
     text-decoration: none;
@@ -21,5 +38,10 @@
       -webkit-text-fill-color: transparent;
     }
   }
+}
+
+.primary-navigation[data-visible="true"] {
+  transform: translateX(0);
+  background-color: clr(neutral, 700);
 }
 
