@@ -9,6 +9,7 @@
   padding: 10rem 2em;
   
   @include mq(medium) {
+    background-color: transparent !important;
     position: unset;
     flex-direction: row;
     transform: translateX(0);
