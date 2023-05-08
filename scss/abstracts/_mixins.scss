@@ -3,7 +3,7 @@
 @use "sass:map";
 @use "breakpoints" as *;
 
-@mixin mq($size) {
+@mixin mqMin($size) {
   @if map.has-key($breakpoints, $size) {
     $breakpoint: map-get($breakpoints, $size);
     @media screen and (min-width: $breakpoint) {
@@ -11,9 +11,28 @@
     }
   } @else if meta.type-of($size) == number {
     @if math.is-unitless($size) {
-      @error 'when using a number with @mq() make sure to include a unit';
+      @error 'when using a number with @mqMin() make sure to include a unit';
     } @else {
       @media screen and (min-width: $size) {
+        @content;
+      }
+    }
+  } @else {
+    @error 'the keyword #{$size} is not in the $breakpoints map';
+  }
+}
+
+@mixin mqMax($size) {
+  @if map.has-key($breakpoints, $size) {
+    $breakpoint: map-get($breakpoints, $size);
+    @media screen and (max-width: $breakpoint) {
+      @content;
+    }
+  } @else if meta.type-of($size) == number {
+    @if math.is-unitless($size) {
+      @error 'when using a number with @mqMax() make sure to include a unit';
+    } @else {
+      @media screen and (max-width: $size) {
         @content;
       }
     }

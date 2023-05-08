@@ -7,9 +7,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  span {
-    background: gradients(linear, 400);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  h1 {
+    span {
+      background: gradients(linear, 400);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }

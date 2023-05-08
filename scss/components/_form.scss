@@ -10,7 +10,7 @@ input, textarea, select, button {
   overflow: hidden;
   grid-template-rows: minmax(200px, 1fr);
 
-  @include mq(medium) {
+  @include mqMin(medium) {
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -61,7 +61,7 @@ textarea {
   width: 100%;
   height: 100px;
 
-  @include mq(medium) {
+  @include mqMin(medium) {
     height: 300px;
   }
 }

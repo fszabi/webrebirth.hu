@@ -1,10 +1,10 @@
 $colors: (
-  neutral: (
-    900: #191919,
-    700: #212121,
-    400: #5c5c5c,
-    200: #f8f8f8,
+  neutral: (   
     100: #ffffff,
+    200: #f8f8f8,
+    400: #5c5c5c,
+    700: #212121,
+    900: #191919,
   ),
   primary: (
     300: #ffaf02,
@@ -12,3 +12,14 @@ $colors: (
     500: #dd4e11,
   ),
 );
+
+$clr-neutral-100: #ffffff;
+$clr-neutral-200: #f8f8f8;
+$clr-neutral-400: #5c5c5c;
+$clr-neutral-700: #212121;
+$clr-neutral-900: #191919;
+
+$clr-primary-300: #ffaf02;
+$clr-primary-400: #ff6635;
+$clr-primary-500: #dd4e11;
+

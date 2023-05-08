@@ -63,7 +63,8 @@
         <img class="logo" src="assets/logo.svg" alt="webdesight logo" />
 
         <button class="btn btn--hamburger" aria-controls="primary-navigation" aria-expanded="false">
-          <svg class="hamburger-icon" fill="none" stroke="var(--hamburger-color)" viewBox="-10 -10 120 120" width="32">
+          <span class="visually-hidden">Menu</span>
+          <svg class="hamburger-icon" fill="none" stroke="var(--hamburger-color, #fff)" viewBox="-10 -10 120 120" width="32">
             <path class="line" stroke-width="10" 
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -73,7 +74,7 @@
           </svg> 
         </button>
 
-        <nav>
+        <nav data-visible="false" class="primary-navigation-container">
           <ul data-visible="false" id="primary-navigation" class="primary-navigation flex-group">
             <li><a href="#about">Rólam</a></li>
             <li><a href="#services">Szolgáltatásaim</a></li>
@@ -97,9 +98,12 @@
             elérhetőségedet és az üzleti lehetőségeidet.
           </p>
           <div class="flex-group mx-auto">
-            <a href="#prices" class="btn btn--primary | ff-accent"
-              >Ajánlatkérés</a
-            >
+            
+            <a href="#prices" class="btn btn--primary | ff-accent">
+              <span></span>
+              Ajánlatkérés
+              <span></span>
+            </a>
           </div>
         </div>
       </section>
@@ -375,6 +379,7 @@
             <div class="form-container box-shadow-1 border-radius-1">
               <div class="form-bg"></div>
               <form
+                id="form"
                 action="https://formspree.io/f/mrgvjajd"
                 method="POST"
                 class="form-content | flow"
@@ -421,7 +426,7 @@
                   ></label>
                   <textarea id="message" name="message" required></textarea>
                 </div>
-                <button class="btn btn--primary | ff-accent mx-auto">
+                <button type="submit" form="form" value="Submit" class="btn btn--primary | ff-accent mx-auto">
                   Küldés
                 </button>
               </form>
@@ -448,6 +453,7 @@
               <div>
                 <p class="fs-300"><i class="fa-solid fa-phone | clr-primary-400 margin-inline-8"></i> +36 20 240 2089</p>
                 <p class="fs-300"><i class="fa-solid fa-envelope | clr-primary-400 margin-inline-8"></i> szabolcsforgacs2@gmail.com</p>
+                <p class="fs-300"><i class="fa-solid fa-location-dot | clr-primary-400 margin-inline-8"></i> Bonyhád, 7150, Nagy László u. 14.</p>
               </div>
             </div>
 

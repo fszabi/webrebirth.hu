@@ -2,6 +2,8 @@ const header = document.querySelector(".primary-header");
 
 const headerFlex = document.querySelector(".primary-header .flex-group");
 
+const navcontainer = document.querySelector(".primary-navigation-container");
+
 const nav = document.querySelector(".primary-navigation");
 
 const navFlex = document.querySelector(".primary-navigation .flex-group");
@@ -83,11 +85,38 @@ function showSlides() {
   setTimeout(showSlides, 3000);
 }
 
-// Hamburger
+// Hamburger menu
+
+for (var i = 0; i < navlinks.length; i++) {
+  navlinks[i].addEventListener("click", () => {
+    const currentState = hamburger.getAttribute("data-state");
+    const visibility =
+      nav.getAttribute("data-visible") &&
+      navcontainer.getAttribute("data-visible");
+
+    if (!currentState || currentState === "closed") {
+      hamburger.setAttribute("data-state", "opened");
+      hamburger.setAttribute("aria-expanded", "true");
+    } else {
+      hamburger.setAttribute("data-state", "closed");
+      hamburger.setAttribute("aria-expanded", "false");
+    }
+
+    if (visibility === "false") {
+      navcontainer.setAttribute("data-visible", "true");
+      nav.setAttribute("data-visible", "true");
+    } else {
+      navcontainer.setAttribute("data-visible", "false");
+      nav.setAttribute("data-visible", "false");
+    }
+  });
+}
 
 hamburger.addEventListener("click", () => {
   const currentState = hamburger.getAttribute("data-state");
-  const visibility = nav.getAttribute("data-visible");
+  const visibility =
+    nav.getAttribute("data-visible") &&
+    navcontainer.getAttribute("data-visible");
 
   if (!currentState || currentState === "closed") {
     hamburger.setAttribute("data-state", "opened");
@@ -98,8 +127,10 @@ hamburger.addEventListener("click", () => {
   }
 
   if (visibility === "false") {
+    navcontainer.setAttribute("data-visible", "true");
     nav.setAttribute("data-visible", "true");
   } else {
+    navcontainer.setAttribute("data-visible", "false");
     nav.setAttribute("data-visible", "false");
   }
 });

@@ -5,7 +5,7 @@
   justify-items: center;
   gap: var(--grid-gap, $grid-gap);
 
-  @include mq(medium) {
+  @include mqMin(medium) {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
   }

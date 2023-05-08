@@ -3,35 +3,90 @@
 .btn {
   display: block;
   border: 0;
-  line-height: 1;
+  border-radius: 50px;
   cursor: pointer;
   padding: 1.125em 2.25em;
+  line-height: 1;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: $fw-700;
-  border-radius: 50px;
   
   &--primary {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
     color: clr(neutral, 900);
     background-image: gradients(linear, 400);
-    position: relative;
-    z-index: 0;
+    transition: background-color 300ms;
+
+
+    & > span {
+      position: absolute;
+      z-index: -1;
+      width: 33.333%;
+      height: 100%;
+      background: transparent;
+    }
+
+    & > :first-child {
+      left: 0;
+      top: 0;
+    }
+
+    & > :last-child {
+      right: 0;
+      top: 0;
+    }
 
     &::before {
       position: absolute;
+      content: "";
+      z-index: -1;
+      inset: 0;
+      margin: auto;
+      width: 10%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      opacity: 0;
+      background-image: gradients(linear, 400);
+      transition: transform 1000ms 300ms, opacity 300ms;
+    }
+
+    &:active::before {
+      transform: scale(20);
+      opacity: 1;
+      transition: transform 1000ms, opacity 500ms;
+    }
+
+    &:has(:first-child:active)::before {
+      margin-left: 0;
+    }
+
+    &:has(:last-child:active)::before {
+      margin-right: 0;
+    }
+
+    &:has(:first-child:active)::before,
+    &:has(:last-child:active)::before {
+      transition: transform 500ms, opacity 250ms;
+    }
+
+    &::after {
+      position: absolute;
       content: '';
+      z-index: -2;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
       border-radius: 50px;
-      background-image: gradients(linear, 100);
-      z-index: -1;
-      transition: opacity 150ms linear;
       opacity: 0;
+      background-image: gradients(linear, 100);
+      transition: opacity 300ms;   
     }
 
-    &:hover::before {
+    &:hover::after,
+    &:focus-visible::after {
       opacity: 1;
     }
   }
@@ -39,29 +94,26 @@
   &--secondary {
     --outline-size: 5px;
 
-    color: clr(neutral, 100);
-    background-color: transparent;
     outline: var(--outline-size) solid clr(neutral, 100);
     outline-offset: calc(var(--outline-size) * -1);
-
-    &:is(:hover, :focus) {
+    color: clr(neutral, 100);
+    background-color: transparent;
+    
+    &:is(:hover, :focus-visible) {
       background-color: clr(neutral, 100);
       color: clr(neutral, 900);
     }
   }
 
   &--hamburger {
-    background: transparent;
-    border: 3px solid var(--hamburger-color, #000);
+    z-index: 9999;
+    overflow: hidden;
+    border: 3px solid var(--hamburger-color, #fff);
     border-radius: .5rem;
     padding: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 1.1em;
-    right: 2.5em;
-    z-index: 9999;
-
-    --hamburger-color: white;
+    background: transparent;
+   
+    --hamburger-color: #{$clr-neutral-100};
 
     .hamburger-icon {
       transition: translate 1s, rotate 1s;
@@ -82,7 +134,7 @@
       stroke-dashoffset: -90;
     }
 
-    @include mq(medium) {
+    @include mqMin(medium) {
       display: none;
     }
   }
