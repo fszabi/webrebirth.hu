@@ -9,9 +9,10 @@
 
   h1 {
     span {
-      background: gradients(linear, 400);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: clr(primary, 300);
+      // background: gradients(linear, 400);
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
     }
   }
 }

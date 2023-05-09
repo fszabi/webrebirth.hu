@@ -10,12 +10,15 @@
     color: clr(neutral, 100);
     font-size: fs(300);
     font-family: $ff-accent;
+    opacity: 1;
+    transition: opacity 250ms, color 250ms;
 
     &:hover,
     &:focus {
-      background: gradients(linear, 400);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: clr(primary, 300)
+      // background: gradients(linear, 400);
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
     }
   }
 }

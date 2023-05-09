@@ -20,6 +20,8 @@ window.onscroll = function () {
   navColor();
 };
 
+window.onload = navEvents;
+
 // window.onload = changeAlignment;
 
 // window.addEventListener("resize", changeAlignment);
@@ -87,8 +89,33 @@ function showSlides() {
 
 // Hamburger menu
 
-for (var i = 0; i < navlinks.length; i++) {
-  navlinks[i].addEventListener("click", () => {
+function navEvents() {
+  for (var i = 0; i < navlinks.length; i++) {
+    navlinks[i].addEventListener("click", () => {
+      const currentState = hamburger.getAttribute("data-state");
+      const visibility =
+        nav.getAttribute("data-visible") &&
+        navcontainer.getAttribute("data-visible");
+
+      if (!currentState || currentState === "closed") {
+        hamburger.setAttribute("data-state", "opened");
+        hamburger.setAttribute("aria-expanded", "true");
+      } else {
+        hamburger.setAttribute("data-state", "closed");
+        hamburger.setAttribute("aria-expanded", "false");
+      }
+
+      if (visibility === "false") {
+        navcontainer.setAttribute("data-visible", "true");
+        nav.setAttribute("data-visible", "true");
+      } else {
+        navcontainer.setAttribute("data-visible", "false");
+        nav.setAttribute("data-visible", "false");
+      }
+    });
+  }
+
+  hamburger.addEventListener("click", () => {
     const currentState = hamburger.getAttribute("data-state");
     const visibility =
       nav.getAttribute("data-visible") &&
@@ -111,26 +138,3 @@ for (var i = 0; i < navlinks.length; i++) {
     }
   });
 }
-
-hamburger.addEventListener("click", () => {
-  const currentState = hamburger.getAttribute("data-state");
-  const visibility =
-    nav.getAttribute("data-visible") &&
-    navcontainer.getAttribute("data-visible");
-
-  if (!currentState || currentState === "closed") {
-    hamburger.setAttribute("data-state", "opened");
-    hamburger.setAttribute("aria-expanded", "true");
-  } else {
-    hamburger.setAttribute("data-state", "closed");
-    hamburger.setAttribute("aria-expanded", "false");
-  }
-
-  if (visibility === "false") {
-    navcontainer.setAttribute("data-visible", "true");
-    nav.setAttribute("data-visible", "true");
-  } else {
-    navcontainer.setAttribute("data-visible", "false");
-    nav.setAttribute("data-visible", "false");
-  }
-});

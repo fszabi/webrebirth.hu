@@ -2,9 +2,10 @@
 
 .section-header {
   h2 {
-    background: gradients(linear, 400);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: clr(primary, 300);
+    // background: gradients(linear, 400);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
   }
 
   &:has(p) {
@@ -13,25 +14,6 @@
 
   &:not(:has(p)) {
     margin-block-end: size(36) * 1.5;
-  }
-
-  &[data-decoration="true"]::after {
-    content: "";
-    display: block;
-    width: 10rem;
-    height: 1px;
-    background-color: currentColor;
-    margin-block-start: size(36);
-
-    .text-center & {
-      margin-inline: auto;
-    }
-  }
-
-  &.text-center {
-    &[data-decoration="true"]::after {
-      margin-inline: auto;
-    }
   }
 
   p {
