@@ -1,0 +1,16 @@
+@use "../abstracts/" as *;
+
+body {
+  background-color: clr(neutral, 900);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.success {
+  padding: size(80) * 1.5 size(80) * 3;
+
+  a {
+    display: block;
+  }
+}
