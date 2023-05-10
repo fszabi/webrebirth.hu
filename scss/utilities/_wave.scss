@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 .wave {
-  aspect-ratio: 900/300;
+  aspect-ratio: 900/200;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -13,7 +13,7 @@
 }
 
 .wave--unique {
-  aspect-ratio: 900/150;
+  aspect-ratio: 900/100;
 
   @include mqMax(small) {
     aspect-ratio: 900/300;
