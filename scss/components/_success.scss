@@ -1,6 +1,6 @@
 @use "../abstracts/" as *;
 
-body {
+.success-body {
   background-color: clr(neutral, 900);
   height: 100vh;
   display: grid;
