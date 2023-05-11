@@ -13,58 +13,68 @@ input, textarea, select, button {
   @include mqMin(medium) {
     grid-template-columns: 1fr 1fr;
   }
-}
 
-.form-bg {
-  background-image: url("../assets/contact.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+  .form-bg {
+    background-image: url("../assets/contact.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .form-bg {
+    background-image: -webkit-image-set(url("../assets/contact.webp") 1x);
+  }
 
-.form-bg {
-  background-image: -webkit-image-set(url("../assets/contact.webp") 1x);
-}
+  .form-content {
+    padding: $form-content-padding * 2;
+    background-color: clr(neutral, 700);
 
-.form-content {
-  padding: $form-content-padding * 2;
-  background-color: clr(neutral, 700);
-}
+    .form-group {
+      display: flex;
+      gap: $flex-group-gap;
+    }
 
-.form-group {
-	display: flex;
-  gap: $flex-group-gap;
-}
+    label {
+      width: 100%;
+      display: block;
+    }
 
-label {
-  width: 100%;
-  display: block;
-}
-
-input, textarea {
-	border: 1px solid #ccc;
-	display: block;
-	width: 100%;
-	height: 40px;
-	padding: 0 20px;
-	border-radius: 20px;
-	background: none;
-  transition: border 250ms;
-	&:focus {
-		border: 1px solid #ff6635;
-    outline: none;
-	}
-}
-
-textarea {
-  background: none;
-  width: 100%;
-  height: 100px;
-
-  @include mqMin(medium) {
-    height: 300px;
+    input, textarea {
+      border: 1px solid #ccc;
+      display: block;
+      width: 100%;
+      height: 40px;
+      padding: 0 20px;
+      border-radius: 20px;
+      background: none;
+      transition: border 250ms;
+      &:focus {
+        border: 1px solid #ff6635;
+        outline: none;
+      }
+    }
+    
+    textarea {
+      background: none;
+      width: 100%;
+      height: 100px;
+    
+      @include mqMin(medium) {
+        height: 300px;
+      }
+    }
   }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

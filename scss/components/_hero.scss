@@ -6,7 +6,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   h1 {
     span {
       color: clr(primary, 300);
@@ -15,4 +14,9 @@
       // -webkit-text-fill-color: transparent;
     }
   }
+}
+
+.hero {
+  background-image: gradients(linear, 900),
+  -webkit-image-set(url("../assets/web.webp") 1x);
 }

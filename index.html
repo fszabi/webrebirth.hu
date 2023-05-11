@@ -45,13 +45,9 @@
 
     <!-- *Font Awesome -->
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <script src="https://kit.fontawesome.com/cd6c1a3f7e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- *SCSS -->
 
@@ -387,50 +383,42 @@
           <div class="even-columns">
             <div class="form-container box-shadow-1 border-radius-1">
               <div class="form-bg"></div>
-              <form id="contactus" class="form-content | flow" name="conactus" method="POST" data-netlify="true" action="contact.html"> 
+              <form id="contact" class="form-content | flow" data-spacing="large" name="contact" method="POST" data-netlify="true" action="success.html"> 
                 <div class="form-group">
                   <div>
-                    <label for="fname"
-                      >Keresztnév
-                      <i
-                        class="fa-solid fa-star | clr-primary-300 margin-inline-4"
-                      ></i
-                    ></label>
+                    <label class="margin-block-6" for="fname">
+                      Keresztnév
+                      <i class="fa-sharp fa-solid fa-star-of-life | clr-primary-300 margin-inline-4"></i>
+                    </label>
                     <input id="fname" name="fname" type="text" required />
                   </div>
                   <div>
-                    <label for="sname"
-                      >Vezetéknév
-                      <i
-                        class="fa-solid fa-star | clr-primary-300 margin-inline-4"
-                      ></i
-                    ></label>
+                    <label class="margin-block-6" for="sname">
+                      Vezetéknév
+                      <i class="fa-sharp fa-solid fa-star-of-life | clr-primary-300 margin-inline-4"></i>
+                    </label>
                     <input id="sname" name="sname" type="text" required />
                   </div>
                 </div>
                 <div>
-                  <label for="email"
-                    >Email cím
-                    <i
-                      class="fa-solid fa-star | clr-primary-300 margin-inline-4"
-                    ></i
-                  ></label>
+                  <label class="margin-block-6" for="email">
+                    Email cím
+                    <i class="fa-sharp fa-solid fa-star-of-life | clr-primary-300 margin-inline-4"></i>
+                  </label>
                   <input id="email" name="email" type="email" required />
                 </div>
                 <div>
-                  <label for="phone">Telefonszám</label>
+                  <label class="margin-block-6" for="phone">Telefonszám</label>
                   <input id="phone" name="phone" type="text" />
                 </div>
                 <div>
-                  <label for="message"
-                    >Üzenet
-                    <i
-                      class="fa-solid fa-star | clr-primary-300 margin-inline-4"
-                    ></i
-                  ></label>
+                  <label class="margin-block-6" for="message">
+                    Üzenet
+                    <i class="fa-sharp fa-solid fa-star-of-life | clr-primary-300 margin-inline-4"></i>
+                  </label>
                   <textarea id="message" name="message" required></textarea>
                 </div>
-                <button type="submit" form="contactus" value="Submit" class="btn btn--primary | ff-accent mx-auto">
+                <button type="submit" form="contact" value="Submit" class="btn btn--primary | ff-accent mx-auto">
                   Küldés
                 </button>
               </form>
