@@ -5,8 +5,6 @@ export default {
   plugins: [htmlPurge()],
   base: "",
   build: {
-    outDir: "../backend/invest_apps/templates",
-    emptyOutDir: true,
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
