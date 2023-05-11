@@ -1,16 +1,16 @@
 import htmlPurge from "vite-plugin-purgecss";
-import path from "path";
+import { resolve } from "path";
 
 export default {
   plugins: [htmlPurge()],
   base: "",
-  root: path.resolve(__dirname, "src"),
   build: {
-    outDir: path.resolve(__dirname, "dist"),
+    outDir: "../backend/invest_apps/templates",
+    emptyOutDir: true,
     rollupOptions: {
       input: {
-        index: path.resolve(__dirname, "./index.html"),
-        sent: path.resolve(__dirname, "./=sent.html"),
+        main: resolve(__dirname, "index.html"),
+        contact: resolve(__dirname, "contact/sent.html"),
       },
     },
   },
