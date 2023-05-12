@@ -15,6 +15,25 @@ body {
   color: clr(neutral, 100);
 }
 
+::-webkit-scrollbar {
+  width: size(8);
+  background-color: clr(neutral, 700);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100vw;
+  margin-block: size(8);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: clr(primary, 300);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: clr(neutral, 100);
+}
+
 section, .primary-header, footer {
   // background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
 }
@@ -27,4 +46,6 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+
 
