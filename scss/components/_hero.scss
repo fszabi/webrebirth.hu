@@ -2,7 +2,7 @@
 
 .hero {
   background: gradients(linear, 900),
-  url("../assets/web.jpeg");
+  url("../assets/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,7 +16,7 @@
   }
 }
 
-.hero {
-  background-image: gradients(linear, 900),
-  -webkit-image-set(url("../assets/web.webp") 1x);
-}
+// .hero {
+//   background-image: gradients(linear, 900),
+//   -webkit-image-set(url("../assets/web.webp") 1x);
+// }

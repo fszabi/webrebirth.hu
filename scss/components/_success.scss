@@ -2,7 +2,7 @@
 
 .success-body {
   background: gradients(linear, 900),
-  url("../assets/contact.jpeg");
+  url("../assets/success.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -20,7 +20,7 @@
   }
 }
 
-.success-body {
-  background-image: gradients(linear, 900),
-  -webkit-image-set(url("../assets/contact.webp") 1x);
-}
+// .success-body {
+//   background-image: gradients(linear, 900),
+//   -webkit-image-set(url("../assets/contact.webp") 1x);
+// }
