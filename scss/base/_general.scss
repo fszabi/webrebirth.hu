@@ -21,7 +21,6 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  border-radius: 100vw;
   margin-block: size(8);
 }
 
@@ -30,8 +29,12 @@ body {
   border-radius: 100vw;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background-color: clr(neutral, 100);
+@supports (scrollbar-color: clr(primary, 300) clr(neutral, 700)) {
+  * {
+    scrollbar-color: clr(primary, 300) clr(neutral, 700);
+    scrollbar-width: thin;
+    scrollbar-gutter: stable both-edges;
+  }
 }
 
 section, .primary-header, footer {
