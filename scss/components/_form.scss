@@ -32,6 +32,10 @@ input, textarea, select, button {
     .form-group {
       display: flex;
       gap: $flex-group-gap;
+
+      @include mqMax(medium) {
+        flex-wrap: wrap;
+      }
     }
 
     label {
