@@ -36,12 +36,16 @@
 
     <!-- *Google Fonts -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,700;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
       rel="stylesheet"
-    />
+    /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
 
     <!-- *Font Awesome -->
 
@@ -60,7 +64,7 @@
         <img class="logo" src="assets/logo.svg" alt="webdesight logo" />
 
         <button class="btn btn--hamburger" aria-controls="primary-navigation" aria-expanded="false">
-          <span class="visually-hidden">Menu</span>
+          <span class="visually-hidden">Navigációs menü</span>
           <svg class="hamburger-icon" fill="none" stroke="var(--hamburger-color, #fff)" viewBox="-10 -10 120 120" width="32">
             <path class="line" stroke-width="10" 
                   stroke-linecap="round"
@@ -76,7 +80,7 @@
             <li><a href="#rolam">Rólam</a></li>
             <li><a href="#szolgaltatasaim">Szolgáltatásaim</a></li>
             <li><a href="#referenciak">Referenciák</a></li>
-            <li><a href="#arak">Árak</a></li>
+            <li><a href="#arak">Ajánlatkérés</a></li>
             <li><a href="#elerhetosegek">Elérhetőségek</a></li>
           </ul>
         </nav>
@@ -86,13 +90,14 @@
       <section class="hero section-xl | clr-neutral-100 text-center">
         <div class="container flow" data-spacing="extra-large">
           <h1 class="fs-900 ff-accent fw-700">
-            Web<span>design</span>, reszponzív <span>weboldalak</span>
+            Web<span class="clr-primary-300">design</span>, reszponzív <span class="clr-primary-300">weboldal</span>ak
           </h1>
           <!-- <p class="fs-500 ff-accent fw-700">Webdesignok készítése, reszponzív weboldalak fejlesztése és üzemeltetése</p> -->
-          <p class="fs-500 ff-accent fw-700">
-            Egyedi weboldalak minden ügyfélnek - igényeid szerint készítek
+          <p class="fs-400 ff-accent fw-700">
+            <!-- Egyedi weboldalak minden ügyfélnek - igényeid szerint készítek
             számodra egy egyedi weboldalt, amely segít növelni a globális
-            elérhetőségedet és az üzleti lehetőségeidet.
+            elérhetőségedet és az üzleti lehetőségeidet. -->
+            Van egy ötleted, és meg szeretnéd valósítani? Akkor jó helyen jársz!
           </p>
           <div class="flex-group mx-auto">
             
@@ -128,20 +133,24 @@
               <p>
                 <span class="fs-500 fw-700 text-italic">Forgács Szabolcs</span>
                 <br />
-                vagyok, a Webdesight alapítója. Több mint 4 éve, hogy
+                vagyok, egy lelkes <span class="fs-500 clr-primary-300">Front-End</span> webfejlesztő, és a <span class="fs-500 clr-primary-300">Webdesight</span> alapítója. 
+                <!-- Több mint 4 éve, hogy
                 megismerkedtem a webfejlesztés világával, ami már abban a
-                pillanatban magával ragadott.
+                pillanatban magával ragadott. -->
+                Lenyűgöző készségekkel rendelkezem a HTML, CSS, JavaScript, és SCSS nyelvek terén.
               </p>
               <p>
-                A célom az, hogy a vállalkozásod forgalmát, illetve ügyfélkörét
-                megnöveljem. Nincs még weboldalad, esetleg nem vagy megelégedve
-                a jelenlegivel? Az egyszerű weboldalaktól kezdve a kreatívabb,
-                modernebb weboldalakig a segítségedre leszek.
+                <!-- A célom az, hogy a vállalkozásod forgalmát, illetve ügyfélkörét
+                megnöveljem. -->
+                Nincsen <span class="fs-500 clr-primary-300">még</span> weboldalad, esetleg nem vagy megelégedve
+                a <span class="fs-500 clr-primary-300">jelenlegivel</span>? Tisztában vagy vele, hogy az internet, és a weboldalak a jövő, de nem tudod <span class="fs-500 clr-primary-300">hogyan</span> kezdj bele?
+                Ha magadra ismertél, akkor jó helyen jársz!
+                Az egyszerű weboldalaktól kezdve a kreatívabb,
+                <span class="fs-500 clr-primary-300">modernebb</span> külsővel rendelkező weboldalakig bármiben a rendelkezésedre állok.
               </p>
               <p>
                 A folyamat során a te igényeid szerint alakul majd a fejlesztés
-                a korai fázistól kezdve a végsőkig, ezáltal a végeredmény
-                garantáltan elnyeri majd a tetszésedet.
+                a korai fázistól kezdve a végsőkig. A végeredmény garantáltan kielégíti majd a <span class="fs-500 clr-primary-300">Te</span> és az <span class="fs-500 clr-primary-300">Ügyfeleid</span> igényeit is.
               </p>
             </div>
           </div>
@@ -150,7 +159,7 @@
 
       <div class="wave layer-1"></div>
 
-      <section id="szolgaltatasaim" class="section | bg-neutral-900">
+      <section id="szolgaltatasaim" class="section services | bg-neutral-900">
         <div class="container" data-type="wide">
           <header class="section-header text-center">
             <h2 class="fs-700 ff-accent fw-700">
@@ -159,7 +168,7 @@
           </header>
 
           <div class="even-columns flow-row">
-            <div class="even-columns align-center">
+            <div class="even-columns | padding-32 bg-neutral-700 border-radius-1 box-shadow-1">
               <div>
                 <picture>
                   <source srcset="" type="image/webp" />
@@ -170,25 +179,37 @@
                   />
                 </picture>
               </div>
-              <div class="padding-32 no-padding">
-                <h3 class="fs-600 fw-700 ff-accent text-uppercase">
-                  Webdesign
-                </h3>
-                <p>
-                  Egy jó webdesign célja a felhasználói élmény javítása és az
-                  információk hatékony átadása. Egy modern webdesign-t gyakran
-                  az egyszerűség és az átláthatóság jellemez, amelynek
-                  segítségével a felhasználók könnyedén navigálhatnak az oldalon
-                  és megtalálhatják az általuk keresett információkat. A
-                  reszponzívitás, vagyis a mobilbarát tervezés további fontos
-                  tényező, hiszen a mobiltelefonok és a táblagépek használata
-                  egyre nő, így az oldalaknak alkalmazkodniuk kell a különböző
-                  eszközök képernyőméretéhez és felbontásához.
-                </p>
+              <div class="flow padding-32 no-padding">
+                <header class="section-header">
+                  <h3 class="fs-600 fw-700 ff-accent text-uppercase">
+                    Webdesign
+                  </h3>
+                  <p>
+                    Egy jó webdesign célja a felhasználói élmény javítása és az
+                    információk hatékony átadása. 
+   
+                    <!-- Egy modern webdesign-t gyakran
+                    az egyszerűség és az átláthatóság jellemez, amelynek
+                    segítségével a felhasználók könnyedén navigálhatnak az oldalon
+                    és megtalálhatják az általuk keresett információkat. A
+                    reszponzívitás, vagyis a mobilbarát tervezés további fontos
+                    tényező, hiszen a mobiltelefonok és a táblagépek használata
+                    egyre nő, így az oldalaknak alkalmazkodniuk kell a különböző
+                    eszközök képernyőméretéhez és felbontásához. -->
+                  </p>
+                </header>
+    
+                <p class="fs-500 clr-primary-300">Amit kapsz: </p>
+
+                <ul>
+                  <li>Egyszerű, átlátható külső</li>
+                  <li>Felhasználóbarát kialakítás</li>
+                  <li>Reszponzívitás</li>
+                </ul>
               </div>
             </div>
 
-            <div class="even-columns align-center | mirrored">
+            <div class="even-columns align-center | mirrored padding-32 bg-neutral-700 border-radius-1 box-shadow-1">
               <div>
                 <picture>
                   <source srcset="" type="image/webp" />
@@ -215,7 +236,7 @@
               </div>
             </div>
 
-            <div class="even-columns align-center">
+            <div class="even-columns align-center | padding-32 bg-neutral-700 border-radius-1 box-shadow-1">
               <div>
                 <picture>
                   <source srcset="" type="image/webp" />
@@ -241,7 +262,7 @@
               </div>
             </div>
 
-            <div class="even-columns align-center | mirrored">
+            <div class="even-columns align-center | mirrored padding-32 bg-neutral-700 border-radius-1 box-shadow-1">
               <div>
                 <picture>
                   <source srcset="" type="image/webp" />
@@ -376,7 +397,7 @@
         <div class="container" data-type="wide">
           <header class="section-header">
             <h2 class="fs-700 ff-accent text-center">
-              Kapcsolat
+              Ajánlatkérés
             </h2>
           </header>
 
@@ -435,11 +456,11 @@
     >
       <div class="container | flex-group flex-col flow">
         <div>
-          <h2 class="fs-700 ff-accent text-center">A jövő előtted áll!</p>
+          <h2 class="fs-700 ff-accent text-center word-wrap">A jövő előtted áll!</p>
         </div>
         
         <div class="info | padding-block-1 linear-gradient-400">
-          <div class="even-columns | padding-32 bg-neutral-700">
+          <div class="informations even-columns | bg-neutral-700">
             <img class="logo | align-self-center" src="assets/logo.svg" alt="webdesight logo" />
 
             <div class="flow">
@@ -468,6 +489,13 @@
       </div>
 
       <div class="wave wave--unique layer-3"></div>
+
+      <button class="btn btn--scroll-top">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+        <span class="visually-hidden">
+          Görgetés az oldal tetejére
+        </span>
+      </button>
     </footer>
 
     <!-- JS -->

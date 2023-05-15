@@ -1,0 +1,22 @@
+@use "../abstracts/" as *;
+
+.services {
+  --grid-gap: 5rem;
+
+  .even-columns > .even-columns {
+    --grid-gap: 3rem;
+  }
+
+  ul {
+    li {
+      padding-left: .5em;
+    }
+  
+    ::marker {
+      content: "\f00c";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 700;
+      color: clr(primary, 300);
+    }
+  }
+}

@@ -2,7 +2,6 @@
 
 .even-columns {
   display: grid;
-  justify-items: center;
   gap: var(--grid-gap, $grid-gap);
 
   @include mqMin(medium) {

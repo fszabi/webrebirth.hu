@@ -138,4 +138,17 @@
       display: none;
     }
   }
+
+  &--scroll-top {
+    border: 0;
+    background: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    visibility: hidden;
+    font-size: fs(800);
+    color: clr(primary, 300); 
+    transition: visibility 250ms, opacity 250ms;
+  }
 }
