@@ -1,9 +1,0 @@
-@use "../abstracts/" as *;
-
-.no-padding {
-  @media screen and (max-width: 75rem) {
-    padding: 0;
-  }
-
-  padding: 0;
-}

@@ -16,10 +16,6 @@
 
   &.flex-col {
     flex-direction: column; 
-
-    ul {
-      --flex-row-gap: #{$flex-group-gap};
-    }
   }
 
   &.mx-auto {

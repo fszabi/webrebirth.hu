@@ -9,6 +9,28 @@
       object-fit: cover;
     }
   }
+
+  .skills-list {
+    --flex-column-gap: 3rem;
+
+    li { 
+      background-color: clr(neutral, 100);
+      padding: 1em;
+      border-radius: 50%;
+      width: 4.5rem;
+      height: 4.5rem;
+      transition: transform 500ms;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+  
+      img {
+        width: 3rem;
+        object-fit: contain;
+      }
+    }
+  }
 }
 
 
