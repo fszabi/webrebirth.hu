@@ -21,9 +21,9 @@ input, textarea, select, button {
     background-repeat: no-repeat;
   }
   
-  // .form-bg {
-  //   background-image: -webkit-image-set(url("../assets/contact.webp") 1x);
-  // }
+  .form-bg {
+    background-image: -webkit-image-set(url("../assets/contact.webp") 1x);
+  }
 
   .form-content {
     padding: $form-content-padding * 2;
