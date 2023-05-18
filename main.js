@@ -3,7 +3,7 @@
 //   navColor();
 // };
 
-window.onload = navEvents;
+window.onload = events;
 
 // Header
 
@@ -55,25 +55,7 @@ const scrollButtonObserver = new IntersectionObserver(
 
 scrollButtonObserver.observe(scrollWatcher);
 
-// function navColor() {
-//   if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
-//     black();
-//   } else {
-//     transparent();
-//   }
-// }
-
-// function black() {
-//   header.style.backgroundColor = "var(--clr-neutral-900)";
-//   header.classList.add("box-shadow-1");
-// }
-
-// function transparent() {
-//   header.style.backgroundColor = "var(--clr-transparent)";
-//   header.classList.remove("box-shadow-1");
-// }
-
-// Hamburger menu
+// Events on load
 
 const navcontainer = document.querySelector(".primary-navigation-container");
 
@@ -83,7 +65,7 @@ const hamburger = document.querySelector(".btn--hamburger");
 
 const navlinks = document.body.querySelectorAll(".primary-navigation a");
 
-function navEvents() {
+function events() {
   for (var i = 0; i < navlinks.length; i++) {
     navlinks[i].addEventListener("click", () => {
       const currentState = hamburger.getAttribute("data-state");
@@ -169,37 +151,3 @@ function showSlides() {
   slides[slideIndex - 1].style.display = "flex";
   setTimeout(showSlides, 3000);
 }
-
-// Scroll top button
-
-// const scrollButton = document.querySelector(".btn--scroll-top");
-
-// function toggleScrollButton() {
-//   if (
-//     document.body.scrollTop > 1000 ||
-//     document.documentElement.scrollTop > 1000
-//   ) {
-//     toggleOn();
-//   } else {
-//     toggleOff();
-//   }
-// }
-
-// function toggleOn() {
-//   scrollButton.style.visibility = "visible";
-//   scrollButton.style.opacity = "0.7";
-// }
-
-// function toggleOff() {
-//   scrollButton.style.visibility = "hidden";
-//   scrollButton.style.opacity = "0";
-// }
-
-// scrollButton.addEventListener("click", () => {
-//   scrollTop();
-// });
-
-// function scrollTop() {
-//   document.body.scrollTop = 0; // Safari
-//   document.documentElement.scrollTop = 0; // Firefox, Chrome, Opera
-// }
