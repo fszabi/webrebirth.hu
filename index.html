@@ -151,7 +151,7 @@
                 <!-- Több mint 4 éve, hogy
                 megismerkedtem a webfejlesztés világával, ami már abban a
                 pillanatban magával ragadott. -->
-                Lenyűgöző készségekkel rendelkezem a HTML, CSS, JavaScript, és SCSS nyelvek terén.
+                Kiemelkedő készségekkel rendelkezem a HTML, CSS, JavaScript, és SCSS nyelvek terén.
               </p>
               <p>
                 <!-- A célom az, hogy a vállalkozásod forgalmát, illetve ügyfélkörét
@@ -234,7 +234,7 @@
               </div>
             </div> -->
 
-            <div class="even-columns align-center | mirrored text-right padding-32 bg-neutral-700 border-radius-1 box-shadow-1">
+            <div class="even-columns | padding-32 bg-neutral-700 border-radius-1 box-shadow-1">
               <div>
                 <picture>
                   <source srcset="assets/webdevelopment.webp" type="image/webp" />
@@ -245,7 +245,7 @@
                   />
                 </picture>
               </div>
-              <div class="flow padding-32">
+              <div class="flow padding-16">
                 <header>
                   <h3 class="fs-600 fw-700 ff-accent text-uppercase">
                     Weboldal készítés
@@ -263,7 +263,7 @@
 
                 <p class="fs-500 clr-primary-300">Amit nyújtok: </p>
 
-                <ul class="flex-group flex-col nowrap align-end">
+                <ul class="flex-group flex-col nowrap">
                   <li>Globális piacra bekerülés</li>
                   <li>Személyreszabott weboldal</li>
                   <li>Felhasználóbarát kialakítás</li>
@@ -273,7 +273,7 @@
               </div>
             </div>
 
-            <div class="even-columns align-center | padding-32 bg-neutral-700 border-radius-1 box-shadow-1">
+            <div class="even-columns | mirrored padding-32 bg-neutral-700 border-radius-1 box-shadow-1">
               <div>
                 <picture>
                   <source srcset="assets/seo.webp" type="image/webp" />
@@ -284,11 +284,11 @@
                   />
                 </picture>
               </div>
-              <div class="flow padding-32">
+              <div class="flow padding-16">
                 <header>
                   <h3 class="fs-600 fw-700 ff-accent text-uppercase">SEO</h3>
                   <p>
-                    A SEO, vagy keresőoptimalizálás alkalmazásával több Ügyfélet tudunk az adott weboldalra csalogatni.
+                    A SEO, vagy keresőoptimalizálás alkalmazásával több Ügyfelet tudunk az adott weboldalra csalogatni.
 
                     <!-- Az egyik legjobb digitális marketing stratégia. A
                     keresőmotorok organikus találatainak javításával növelhető a
@@ -305,7 +305,7 @@
 
                 <p class="fs-500 clr-primary-300">Amit nyújtok: </p>
 
-                <ul>
+                <ul class="flex-group flex-col nowrap">
                   <li>Optimalizálás az üzleti növekedés érdekében</li>
                   <li>A weboldaladhoz kapcsolódó legfontosabb kulcsszavak megkeresése</li>
                   <li>Magasabb helyezés a keresők találati listáján</li>
@@ -315,7 +315,7 @@
               </div>
             </div>
 
-            <div class="even-columns align-center | mirrored text-right padding-32 bg-neutral-700 border-radius-1 box-shadow-1">
+            <div class="even-columns | padding-32 bg-neutral-700 border-radius-1 box-shadow-1">
               <div>
                 <picture>
                   <source srcset="assets/maintenance.webp" type="image/webp" />
@@ -326,7 +326,7 @@
                   />
                 </picture>
               </div>
-              <div class="flow padding-32">
+              <div class="flow padding-16">
                 <header>
                   <h3 class="fs-600 fw-700 ff-accent text-uppercase">
                     Karbantartás
@@ -338,7 +338,7 @@
 
                 <p class="fs-500 clr-primary-300">Amit nyújtok: </p>
 
-                <ul class="flex-group flex-col nowrap align-end">
+                <ul class="flex-group flex-col nowrap">
                   <li>Biztonság fenntartása</li>
                   <li>Sebesség optimalizálása</li>
                   <li>Elavult tartalmak frissítése</li>
@@ -486,11 +486,11 @@
                     Email cím
                     <i class="fa-sharp fa-solid fa-star-of-life | clr-primary-300 margin-inline-4"></i>
                   </label>
-                  <input id="email" name="email" type="email" required />
+                  <input id="email" name="email" type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Hibás email formátum."/>
                 </div>
                 <div>
                   <label class="margin-block-6" for="phone">Telefonszám</label>
-                  <input id="phone" name="phone" type="text" pattern="[0-9]{10}"
+                  <input id="phone" name="phone" type="text" pattern="[0-9]+"
                   title="A telefonszám csak számokat tartalmazhat." />
                 </div>
                 <div>
