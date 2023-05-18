@@ -8,8 +8,11 @@
   }
 
   ul {
+    --flex-row-gap: .25em;
+
     li {
       padding-left: .5em;
+      
     }
   
     ::marker {

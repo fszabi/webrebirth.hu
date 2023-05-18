@@ -6,6 +6,9 @@ input, textarea, select, button {
 }
 
 .form-container {
+  --clr-neutral-100: #{$clr-neutral-100};
+  --clr-primary-300: #{$clr-primary-300};
+
   display: grid;
   overflow: hidden;
   grid-template-rows: minmax(200px, 1fr);
@@ -71,6 +74,10 @@ input, textarea, select, button {
       }
     }
   }
+}
+
+::-webkit-validation-bubble-message { 
+  display: none; 
 }
 
 

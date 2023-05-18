@@ -131,6 +131,24 @@ function navEvents() {
       nav.setAttribute("data-visible", "false");
     }
   });
+
+  document
+    .querySelectorAll("input[required], textarea[required]")
+    .forEach((e) => {
+      e.addEventListener("focusout", () => {
+        e.style.borderColor = !!e.value
+          ? "var(--clr-neutral-100)"
+          : "var(--clr-primary-300)";
+      });
+    });
+
+  document.querySelectorAll("input[type='email']").forEach((e) => {
+    e.addEventListener("focusout", () => {
+      e.style.borderColor = !!e.value.includes("@")
+        ? "var(--clr-neutral-100)"
+        : "var(--clr-primary-300)";
+    });
+  });
 }
 
 // Slider

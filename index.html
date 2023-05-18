@@ -263,7 +263,8 @@
 
                 <p class="fs-500 clr-primary-300">Amit nyújtok: </p>
 
-                <ul>
+                <ul class="flex-group flex-col nowrap align-end">
+                  <li>Globális piacra bekerülés</li>
                   <li>Személyreszabott weboldal</li>
                   <li>Felhasználóbarát kialakítás</li>
                   <li>Reszponzívitás</li>
@@ -305,8 +306,9 @@
                 <p class="fs-500 clr-primary-300">Amit nyújtok: </p>
 
                 <ul>
+                  <li>Optimalizálás az üzleti növekedés érdekében</li>
                   <li>A weboldaladhoz kapcsolódó legfontosabb kulcsszavak megkeresése</li>
-                  <li>Gyakoribb megjelenés a különböző keresőkben</li>
+                  <li>Magasabb helyezés a keresők találati listáján</li>
                   <li>Forgalmad növelése</li> 
                   <li>Az adott témában érdekelt felhasználók bevonzása</li>
                 </ul>
@@ -324,20 +326,25 @@
                   />
                 </picture>
               </div>
-              <div class="padding-32">
-                <h3 class="fs-600 fw-700 ff-accent text-uppercase">
-                  Karbantartás
-                </h3>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio
-                  iure quod atque laboriosam hic tempora, placeat saepe
-                  doloremque maiores voluptates repellat non error facilis omnis
-                  aut ratione quos praesentium voluptatum? Nemo, laboriosam nam
-                  reiciendis voluptates rem ipsam aspernatur molestiae, deleniti
-                  quas quis veniam ex quia a quae vitae atque eligendi
-                  consequatur nostrum neque! Ex tempora tempore aut adipisci,
-                  consequatur minus.
-                </p>
+              <div class="flow padding-32">
+                <header>
+                  <h3 class="fs-600 fw-700 ff-accent text-uppercase">
+                    Karbantartás
+                  </h3>
+                  <p>
+                    A karbantartás fontos szerepet játszik abban, hogy időben észlelhetőek legyenek az esetleges hibák, illetve, hogy mindig naprakész, biztonságos, és modern legyen a weboldalad.
+                  </p>
+                </header>
+
+                <p class="fs-500 clr-primary-300">Amit nyújtok: </p>
+
+                <ul class="flex-group flex-col nowrap align-end">
+                  <li>Biztonság fenntartása</li>
+                  <li>Sebesség optimalizálása</li>
+                  <li>Elavult tartalmak frissítése</li>
+                  <li>Új tartalmak hozzáadása</li>
+                  <li>Jövöbeli hibák kijavítása</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -462,14 +469,16 @@
                       Keresztnév
                       <i class="fa-sharp fa-solid fa-star-of-life | clr-primary-300 margin-inline-4"></i>
                     </label>
-                    <input id="fname" name="fname" type="text" required />
+                    <input id="fname" name="fname" type="text" required pattern="[a-zA-Z]+"
+                    title="A keresztnév csak betűket tartalmazhat." />
                   </div>
                   <div>
                     <label class="margin-block-6" for="sname">
                       Vezetéknév
                       <i class="fa-sharp fa-solid fa-star-of-life | clr-primary-300 margin-inline-4"></i>
                     </label>
-                    <input id="sname" name="sname" type="text" required />
+                    <input id="sname" name="sname" type="text" required pattern="[a-zA-Z]+"
+                    title="A vezetéknév csak betűket tartalmazhat." />
                   </div>
                 </div>
                 <div>
@@ -481,7 +490,8 @@
                 </div>
                 <div>
                   <label class="margin-block-6" for="phone">Telefonszám</label>
-                  <input id="phone" name="phone" type="text" />
+                  <input id="phone" name="phone" type="text" pattern="[0-9]{10}"
+                  title="A telefonszám csak számokat tartalmazhat." />
                 </div>
                 <div>
                   <label class="margin-block-6" for="message">
@@ -490,7 +500,7 @@
                   </label>
                   <textarea id="message" name="message" required></textarea>
                 </div>
-                <button type="submit" form="contact" value="Submit" class="btn btn--primary | ff-accent mx-auto">
+                <button id="submit" type="submit" form="contact" value="Submit" class="btn btn--primary | ff-accent mx-auto">
                   Küldés
                 </button>
               </form>
