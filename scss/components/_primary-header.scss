@@ -3,11 +3,17 @@
 .primary-header {
   --flex-row-gap: #{size(32)};
 
-  padding: size(20);
-  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
+  padding: size(20);
+  background-color: transparent;
   transition: background-color 250ms;
+ 
+  &.sticky {
+    background-color: clr(neutral, 900);
+  }
 }
+
