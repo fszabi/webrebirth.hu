@@ -1,7 +1,7 @@
 @use "../abstracts/" as *;
 
 .about {
-  --grid-gap: 3rem;
+  --grid-gap: 5rem;
 
   @include mqMin(medium) {
     picture, img {
