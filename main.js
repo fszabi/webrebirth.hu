@@ -15,7 +15,7 @@ const faders = document.querySelectorAll(".fade-in");
 
 const sliders = document.querySelectorAll(".slide-in");
 
-const lazyImages = document.querySelectorAll("[data-src]");
+const lazyImages = document.querySelectorAll(".lazy-img");
 
 // Header
 
@@ -95,7 +95,7 @@ sliders.forEach((slider) => {
 // Lazy load images
 
 function preloadImage(img) {
-  const src = img.getAttribute("data-src");
+  const src = img.getAttribute("src");
   if (!src) {
     return;
   } else {
