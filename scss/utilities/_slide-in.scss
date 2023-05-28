@@ -1,18 +1,23 @@
-.from-left {
-  transform: translateX(-70%);
-}
+@use "../abstracts/" as *;
 
-.from-right {
-  transform: translateX(70%);
-}
-
-.from-left,
-.from-right {
-  opacity: 0;
-  transition: transform 500ms ease-in, opacity 250ms ease-in;
-
-  &.appear {
-    transform: translateX(0);
-    opacity: 1; 
+@include mqMin(medium) {
+  .from-left {
+    transform: translateX(-70%);
+  }
+  
+  .from-right {
+    transform: translateX(70%);
+  }
+  
+  .from-left,
+  .from-right {
+    opacity: 0;
+    transition: transform 500ms ease-in, opacity 250ms ease-in;
+  
+    &.appear {
+      transform: translateX(0);
+      opacity: 1; 
+    }
   }
 }
+
