@@ -22,6 +22,13 @@
       color: clr(primary, 300);
     }
   }
+
+  @include mqMin(medium) {
+    img {
+      min-height: 40vh;
+      object-fit: cover;
+    }
+  }
 }
 
 
