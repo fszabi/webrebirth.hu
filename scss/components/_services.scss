@@ -14,9 +14,11 @@
       padding-left: .5em;
       
     }
-
+  
     ::marker {
-      content: "asd";
+      content: "\f00c";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 700;
       color: clr(primary, 300);
     }
   }
