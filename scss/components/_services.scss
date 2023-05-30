@@ -14,10 +14,10 @@
       padding-left: .5em;
       
       &::marker {
-        content: "\f00c";
-        font-family: "Font Awesome 6 Free";
-        font-weight: 700;
-        color: clr(primary, 300);
+        
+        
+        font-size: 2.5rem;
+        color: red;
       }
     }
   }
