@@ -12,6 +12,7 @@
 
     li {
       padding-left: .5em;
+      list-style-type: "> 😁";
       
       &::marker {
         content: "\f00c";
