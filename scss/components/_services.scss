@@ -13,7 +13,7 @@
     li {
       padding-left: .5em;
       
-      ::marker {
+      &::marker {
         content: "\f00c";
         font-family: "Font Awesome 6 Free";
         font-weight: 700;
