@@ -16,13 +16,16 @@
     }
 
     ::marker {
-      content: "";
+      content: "asd";
+      color: red;
+      font-family: $ff-base;
+      font-weight: $fw-700;
     }
 
     ::marker {
       content: "\f00c";
       font-family: "Font Awesome 6 Free";
-      font-weight: 700;
+      font-weight: $fw-700;
       color: clr(primary, 300);
     }
   }
