@@ -12,7 +12,7 @@
 
     li {
       padding-left: .5em;
-      list-style-type: "> 😁";
+      list-style-type: "U+2705";
       
       &::marker {
         content: "\f00c";
