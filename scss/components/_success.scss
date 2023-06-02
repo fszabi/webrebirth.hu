@@ -10,13 +10,13 @@
   display: grid;
   place-items: center;
   padding: size(32);
-}
 
-.success {
-  padding: size(32);
-
-  a {
-    display: block;
+  .success {
+    padding: size(32);
+  
+    a {
+      display: block;
+    }
   }
 }
 
@@ -24,3 +24,4 @@
   background-image: gradients(linear, 900),
   -webkit-image-set(url("../assets/success.webp") 1x);
 }
+
