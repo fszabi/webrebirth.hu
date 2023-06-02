@@ -50,5 +50,11 @@
   background-color: clr(neutral, 700);
 }
 
+.secondary-navigation {
+  display: flex;
+  flex-direction: column;
+  row-gap: size(4);
+}
+
 
 

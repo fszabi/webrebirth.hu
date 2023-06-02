@@ -7,10 +7,10 @@
     color: clr(primary, 300);
   }
 
-  .info {
+  .contact {
     display: flex;
     flex-direction: column;
-    row-gap: size(8);
+    row-gap: size(4);
 
     p {
       display: flex;
@@ -18,5 +18,9 @@
       align-items: center;
       column-gap: size(8);
     }
+  }
+
+  .copyright {
+    margin-top: size(36) * 1.5;
   }
 }
