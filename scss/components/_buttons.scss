@@ -19,7 +19,6 @@
     background-image: gradients(linear, 400);
     transition: background-color 300ms;
 
-
     & > span {
       position: absolute;
       z-index: -1;
@@ -98,6 +97,7 @@
     outline-offset: calc(var(--outline-size) * -1);
     color: clr(neutral, 100);
     background-color: transparent;
+    transition: background-color 250ms, color 250ms;
     
     &:is(:hover, :focus-visible) {
       background-color: clr(neutral, 100);
