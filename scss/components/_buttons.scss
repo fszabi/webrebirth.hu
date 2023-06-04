@@ -151,13 +151,13 @@
     border: 0;
     background: 0;
     padding: 0;
-    font-size: fs(800);
+    font-size: fs(700);
     color: clr(primary, 300); 
     transition: visibility 250ms, opacity 250ms;
 
     &.visible {
       visibility: visible;
-      opacity: 0.7;
+      opacity: 1;
     }
   }
 }
