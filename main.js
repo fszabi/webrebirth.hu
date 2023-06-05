@@ -1,8 +1,3 @@
-// window.onscroll = function () {
-//   toggleScrollButton();
-//   navColor();
-// };
-
 window.onload = events;
 
 const scrollWatcher = document.createElement("div");
