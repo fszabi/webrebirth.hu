@@ -3,13 +3,18 @@
 .about {
   --grid-gap: 5rem;
 
-  @include mqMin(medium) {
-    picture, img {
+  picture, img {
+    object-fit: cover;
+
+    @include mqMin(medium) {
       height: 100%;
-      object-fit: cover;
+    }
+
+    @include mqMax(600px) {
+      aspect-ratio: 1/1;
     }
   }
-
+  
   .skills-list {
     --flex-column-gap: 3rem;
     --flex-row-gap: 3rem;
@@ -25,11 +30,6 @@
       
       &:hover {
         transform: scale(1.2);
-      }
-  
-      img {
-        width: 3rem;
-        object-fit: contain;
       }
     }
   }
