@@ -16,6 +16,10 @@ body {
   overflow-x: hidden;
 }
 
+h2, h3 {
+  letter-spacing: 1px;
+}
+
 ::-webkit-scrollbar {
   width: size(8);
   background-color: clr(neutral, 700);
