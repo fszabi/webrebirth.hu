@@ -4,6 +4,8 @@ const scrollWatcher = document.createElement("div");
 
 const header = document.querySelector(".primary-header");
 
+const logo = document.querySelector(".logo");
+
 const scrollButton = document.querySelector(".btn--scroll-top");
 
 const faders = document.querySelectorAll(".fade-in");
@@ -26,6 +28,7 @@ const headerObserver = new IntersectionObserver(
 
     header.classList.toggle("sticky", !entries[0].isIntersecting);
     header.classList.toggle("box-shadow-1", !entries[0].isIntersecting);
+    logo.classList.toggle("z-index-100", !entries[0].isIntersecting);
   },
   { rootMargin: "200px 0px 0px 0px" }
 );
