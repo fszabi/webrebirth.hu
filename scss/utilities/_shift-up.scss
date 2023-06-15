@@ -1,7 +1,0 @@
-@use "../abstracts/" as *;
-
-.shift-up {
-  @include mqMin(medium) {
-    transform: translateY(calc($section-padding * -1.5));
-  }
-}

@@ -290,7 +290,7 @@
               <div class="flow padding-16">
                 <header>
                   <h3 class="fs-600 fw-700 ff-accent text-uppercase">
-                    Domain és tárhely szolgáltatás
+                    Domain és tárhely
                   </h3>
                   <p>
                     Egy weboldalnak szüksége van egy domain címre (lásd .hu), és
@@ -510,15 +510,15 @@
               <div class="form-bg"></div>
               <form
                 id="contact"
-                class="form-content | flow"
+                class="form-content"
                 data-spacing="large"
                 name="contact"
                 method="POST"
                 data-netlify="true"
                 action="success.html"
               >
-                <div>
-                  <label class="margin-block-6" for="name">
+                <div class="form-group">
+                  <label for="name">
                     Név
                     <i
                       class="fa-sharp fa-solid fa-star-of-life | clr-primary-300 margin-inline-4"
@@ -549,8 +549,8 @@
                       title="A vezetéknév csak betűket tartalmazhat."
                     />
                   </div> -->
-                <div>
-                  <label class="margin-block-6" for="email">
+                <div class="form-group">
+                  <label for="email">
                     Email cím
                     <i
                       class="fa-sharp fa-solid fa-star-of-life | clr-primary-300 margin-inline-4"
@@ -565,8 +565,8 @@
                     title="Hibás email formátum."
                   />
                 </div>
-                <div>
-                  <label class="margin-block-6" for="phone">Telefonszám</label>
+                <div class="form-group">
+                  <label for="phone">Telefonszám</label>
                   <input
                     id="phone"
                     name="phone"
@@ -575,23 +575,26 @@
                     title="A telefonszám csak számokat tartalmazhat."
                   />
                 </div>
-                <div>
-                  <label class="margin-block-6" for="service"
-                    >Szolgáltatás</label
-                  >
+                <div class="form-group">
+                  <label for="service">
+                    Szolgáltatás
+                    <i
+                      class="fa-sharp fa-solid fa-star-of-life | clr-primary-300 margin-inline-4"
+                    ></i>
+                  </label>
                   <div class="select">
                     <select id="service" name="service" required>
                       <option value="websitebuilding">Weboldal készítés</option>
                       <option value="domainandstorage">
-                        Domain és tárhely szolgáltatás
+                        Domain és tárhely
                       </option>
                       <option value="maintenance">Karbantartás</option>
                       <option value="seo">SEO</option>
                     </select>
                   </div>
                 </div>
-                <div>
-                  <label class="margin-block-6" for="message">
+                <div class="form-group">
+                  <label for="message">
                     Üzenet
                     <i
                       class="fa-sharp fa-solid fa-star-of-life | clr-primary-300 margin-inline-4"
@@ -628,7 +631,7 @@
 
         <div class="info | padding-block-1 linear-gradient-400">
           <div class="informations even-columns | bg-neutral-700">
-            <div class="flow align-self-center justify-self-centerf">
+            <div class="flow align-self-center justify-self-center">
               <img class="logo" src="assets/logo2.svg" alt="webdesight logo" />
 
               <p class="fs-400 text-left">A jövő előtted áll!</p>

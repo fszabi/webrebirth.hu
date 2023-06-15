@@ -8,17 +8,19 @@
   }
 
   ul {
-    --flex-row-gap: .25em;
+    --flex-row-gap: .5em;
+    padding-left: 1em;
 
     li {
       padding-left: .5em;
       list-style-type: "✔";
       
-      &::marker {
+      &::marker {  
         content: "\f00c";
         font-family: "Font Awesome 6 Free";
         font-weight: 700;
         color: clr(primary, 300);
+        padding: 2em;
       }
     }
   }

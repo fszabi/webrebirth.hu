@@ -16,15 +16,9 @@ $sizes: (
   80: 5rem,
 );
 
-$section-padding: clamp(3rem, 15vh, 20rem);
-
-$section-xl-padding: 25rem;
-
-$card-body-padding: clamp(2rem, 3.5vw, 5rem);
-
 $informations-padding: clamp(1rem, 5vw, 2rem);
 
-$service-padding: clamp(1.5rem, 4vw, 2rem);
+$service-padding: clamp(1rem, 6vw, 2rem);
 
 $grid-gap: 1.5rem;
 $auto-fit-min: 15.625rem;
@@ -36,4 +30,4 @@ $container-inline-padding: 1rem;
 $container-max-width: 60rem;
 $container-max-width-wide: 75rem;
 
-$form-content-padding: 1rem;
+$form-content-padding: clamp(1.5rem, 5vw, 2.5rem);
