@@ -98,18 +98,6 @@ const hamburger = document.querySelector(".btn--hamburger");
 
 const navlinks = document.body.querySelectorAll(".primary-navigation a");
 
-for (var i = 0; i < navlinks.length; i++) {
-  navlinks[i].addEventListener("click", () => {
-    if (window.innerWidth < 960) {
-      hamburger.setAttribute("data-state", "closed");
-      hamburger.setAttribute("aria-expanded", "false");
-
-      navcontainer.setAttribute("data-visible", "false");
-      nav.setAttribute("data-visible", "false");
-    }
-  });
-}
-
 hamburger.addEventListener("click", () => {
   const currentState = hamburger.getAttribute("data-state");
   const visibility =
@@ -132,6 +120,18 @@ hamburger.addEventListener("click", () => {
     nav.setAttribute("data-visible", "false");
   }
 });
+
+for (var i = 0; i < navlinks.length; i++) {
+  navlinks[i].addEventListener("click", () => {
+    if (window.innerWidth < 960) {
+      hamburger.setAttribute("data-state", "closed");
+      hamburger.setAttribute("aria-expanded", "false");
+
+      navcontainer.setAttribute("data-visible", "false");
+      nav.setAttribute("data-visible", "false");
+    }
+  });
+}
 
 // Form events
 
