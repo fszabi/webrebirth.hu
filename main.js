@@ -98,6 +98,26 @@ const hamburger = document.querySelector(".btn--hamburger");
 
 const navlinks = document.body.querySelectorAll(".primary-navigation a");
 
+function openNav() {
+  hamburger.setAttribute("data-state", "opened");
+  hamburger.setAttribute("aria-expanded", "true");
+}
+
+function closeNav() {
+  hamburger.setAttribute("data-state", "closed");
+  hamburger.setAttribute("aria-expanded", "false");
+}
+
+function showNav() {
+  navcontainer.setAttribute("data-visible", "true");
+  nav.setAttribute("data-visible", "true");
+}
+
+function hideNav() {
+  navcontainer.setAttribute("data-visible", "false");
+  nav.setAttribute("data-visible", "false");
+}
+
 hamburger.addEventListener("click", () => {
   const currentState = hamburger.getAttribute("data-state");
   const visibility =
@@ -105,30 +125,23 @@ hamburger.addEventListener("click", () => {
     navcontainer.getAttribute("data-visible");
 
   if (!currentState || currentState === "closed") {
-    hamburger.setAttribute("data-state", "opened");
-    hamburger.setAttribute("aria-expanded", "true");
+    openNav();
   } else {
-    hamburger.setAttribute("data-state", "closed");
-    hamburger.setAttribute("aria-expanded", "false");
+    closeNav();
   }
 
   if (visibility === "false") {
-    navcontainer.setAttribute("data-visible", "true");
-    nav.setAttribute("data-visible", "true");
+    showNav();
   } else {
-    navcontainer.setAttribute("data-visible", "false");
-    nav.setAttribute("data-visible", "false");
+    hideNav();
   }
 });
 
 for (var i = 0; i < navlinks.length; i++) {
   navlinks[i].addEventListener("click", () => {
     if (window.innerWidth < 960) {
-      hamburger.setAttribute("data-state", "closed");
-      hamburger.setAttribute("aria-expanded", "false");
-
-      navcontainer.setAttribute("data-visible", "false");
-      nav.setAttribute("data-visible", "false");
+      closeNav();
+      hideNav();
     }
   });
 }
