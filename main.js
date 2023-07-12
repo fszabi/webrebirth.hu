@@ -1,5 +1,3 @@
-window.onload = events;
-
 const scrollWatcher = document.createElement("div");
 
 const header = document.querySelector(".primary-header");
@@ -100,73 +98,58 @@ const hamburger = document.querySelector(".btn--hamburger");
 
 const navlinks = document.body.querySelectorAll(".primary-navigation a");
 
-function events() {
-  for (var i = 0; i < navlinks.length; i++) {
-    navlinks[i].addEventListener("click", () => {
-      const currentState = hamburger.getAttribute("data-state");
-      const visibility =
-        nav.getAttribute("data-visible") &&
-        navcontainer.getAttribute("data-visible");
-
-      if (!currentState || currentState === "closed") {
-        hamburger.setAttribute("data-state", "opened");
-        hamburger.setAttribute("aria-expanded", "true");
-      } else {
-        hamburger.setAttribute("data-state", "closed");
-        hamburger.setAttribute("aria-expanded", "false");
-      }
-
-      if (visibility === "false") {
-        navcontainer.setAttribute("data-visible", "true");
-        nav.setAttribute("data-visible", "true");
-      } else {
-        navcontainer.setAttribute("data-visible", "false");
-        nav.setAttribute("data-visible", "false");
-      }
-    });
-  }
-
-  hamburger.addEventListener("click", () => {
-    const currentState = hamburger.getAttribute("data-state");
-    const visibility =
-      nav.getAttribute("data-visible") &&
-      navcontainer.getAttribute("data-visible");
-
-    if (!currentState || currentState === "closed") {
-      hamburger.setAttribute("data-state", "opened");
-      hamburger.setAttribute("aria-expanded", "true");
-    } else {
+for (var i = 0; i < navlinks.length; i++) {
+  navlinks[i].addEventListener("click", () => {
+    if (window.innerWidth < 960) {
       hamburger.setAttribute("data-state", "closed");
       hamburger.setAttribute("aria-expanded", "false");
-    }
 
-    if (visibility === "false") {
-      navcontainer.setAttribute("data-visible", "true");
-      nav.setAttribute("data-visible", "true");
-    } else {
       navcontainer.setAttribute("data-visible", "false");
       nav.setAttribute("data-visible", "false");
     }
   });
+}
 
-  document
-    .querySelectorAll("input[required], textarea[required]")
-    .forEach((e) => {
-      e.addEventListener("focusout", () => {
-        e.style.borderColor = !!e.value
-          ? "var(--clr-neutral-100)"
-          : "var(--clr-primary-300)";
-      });
-    });
+hamburger.addEventListener("click", () => {
+  const currentState = hamburger.getAttribute("data-state");
+  const visibility =
+    nav.getAttribute("data-visible") &&
+    navcontainer.getAttribute("data-visible");
 
-  document.querySelectorAll("input[type='email']").forEach((e) => {
+  if (!currentState || currentState === "closed") {
+    hamburger.setAttribute("data-state", "opened");
+    hamburger.setAttribute("aria-expanded", "true");
+  } else {
+    hamburger.setAttribute("data-state", "closed");
+    hamburger.setAttribute("aria-expanded", "false");
+  }
+
+  if (visibility === "false") {
+    navcontainer.setAttribute("data-visible", "true");
+    nav.setAttribute("data-visible", "true");
+  } else {
+    navcontainer.setAttribute("data-visible", "false");
+    nav.setAttribute("data-visible", "false");
+  }
+});
+
+document
+  .querySelectorAll("input[required], textarea[required]")
+  .forEach((e) => {
     e.addEventListener("focusout", () => {
-      e.style.borderColor = !!e.value.includes("@")
+      e.style.borderColor = !!e.value
         ? "var(--clr-neutral-100)"
         : "var(--clr-primary-300)";
     });
   });
-}
+
+document.querySelectorAll("input[type='email']").forEach((e) => {
+  e.addEventListener("focusout", () => {
+    e.style.borderColor = !!e.value.includes("@")
+      ? "var(--clr-neutral-100)"
+      : "var(--clr-primary-300)";
+  });
+});
 
 // Slider
 
