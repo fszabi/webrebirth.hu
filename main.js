@@ -88,7 +88,7 @@ sliders.forEach((slider) => {
   appearOnScroll.observe(slider);
 });
 
-// Events on load
+// Nav events
 
 const navcontainer = document.querySelector(".primary-navigation-container");
 
@@ -132,6 +132,8 @@ hamburger.addEventListener("click", () => {
     nav.setAttribute("data-visible", "false");
   }
 });
+
+// Form events
 
 document
   .querySelectorAll("input[required], textarea[required]")
