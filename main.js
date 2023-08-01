@@ -137,7 +137,7 @@ hamburger.addEventListener("click", () => {
   }
 });
 
-for (var i = 0; i < navlinks.length; i++) {
+for (let i = 0; i < navlinks.length; i++) {
   navlinks[i].addEventListener("click", () => {
     if (window.innerWidth < 960) {
       closeNav();
