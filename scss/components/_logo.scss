@@ -2,19 +2,21 @@
 
 .logo-container {
   font-family: $ff-accent;
+}
 
+.logo {
+  width: 50px;
+
+  &.z-index-100 {
+    z-index: 100;
+  }
+}
+
+.logo-text {
   span {
-  background: gradients(webkit, 400);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  }
-
-  .logo {
-    width: 50px;
-  
-    &.z-index-100 {
-      z-index: 100;
+    background: gradients(webkit, 400);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     }
-  }
 }
 
