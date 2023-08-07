@@ -1,9 +1,20 @@
 @use "../abstracts/" as *;
 
-.logo {
-  width: 150px;
+.logo-container {
+  font-family: $ff-accent;
 
-  &.z-index-100 {
-    z-index: 100;
+  span {
+  background: gradients(webkit, 400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+  .logo {
+    width: 50px;
+  
+    &.z-index-100 {
+      z-index: 100;
+    }
   }
 }
+

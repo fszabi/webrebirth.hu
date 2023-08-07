@@ -8,4 +8,7 @@ $gradients: (
     400: linear-gradient(305deg, #ff6635 0%, #ffaf02 100%),
     900: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
   ),
+  webkit: (
+    400: -webkit-linear-gradient(305deg, #ff6635 0%, #ffaf02 100%),
+  ),
 );
