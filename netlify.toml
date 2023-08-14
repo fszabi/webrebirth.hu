@@ -1,15 +1,4 @@
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 404
-  force = false
-  query = {path = ":path"}
-  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
-
-[[redirects]]
-  from = "/webdesight.hu"
-  to = "/webrebirth.hu"
-  status = 301
-  force = false
-  query = {path = ":path"}
-  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
+from = "/*"
+to = "/index.html"
+status = 404
