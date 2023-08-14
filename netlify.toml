@@ -1,5 +1,5 @@
 [[redirects]]
-from = "webdesight.hu/index.html"
-to = "webrebirth.hu/index.html"
+from = "/webdesight.hu/index.html"
+to = "/webrebirth.hu/index.html"
 status = 301
 force = true
