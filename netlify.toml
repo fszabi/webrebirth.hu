@@ -9,7 +9,7 @@
 [[redirects]]
   from = "/webdesight.hu"
   to = "/webrebirth.hu"
-  status = 391
+  status = 301
   force = false
   query = {path = ":path"}
   conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
