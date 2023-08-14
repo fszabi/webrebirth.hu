@@ -1,6 +1,6 @@
 [[redirects]]
 from = "https://webdesight.hu/*"
-to = "https://webrebirth.hu:splat"
+to = "https://www.webrebirth.hu:splat"
 status = 301
 force = true
 
