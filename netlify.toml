@@ -4,12 +4,6 @@ to = "https://www.webrebirth.hu:splat"
 status = 301
 force = true
 
-[[redirects]]
-from = "https://www.webdesight.hu/*"
-to = "https://www.webrebirth.hu:splat"
-status = 301
-force = true
-
 
 
 
