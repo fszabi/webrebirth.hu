@@ -2,3 +2,4 @@
 from = "/*"
 to = "/wrong.html"
 status = 404
+force = true
