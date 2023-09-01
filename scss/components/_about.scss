@@ -3,7 +3,8 @@
 .about {
   --grid-gap: 5rem;
 
-  picture, img {
+  picture,
+  img {
     object-fit: cover;
 
     @include mqMin(medium) {
@@ -14,12 +15,12 @@
       aspect-ratio: 1/1;
     }
   }
-  
+
   .skills-list {
     --flex-column-gap: 3rem;
     --flex-row-gap: 3rem;
 
-    li { 
+    li {
       cursor: pointer;
       background-color: clr(neutral, 100);
       padding: 1em;
@@ -27,13 +28,14 @@
       width: 4.5rem;
       height: 4.5rem;
       transition: transform 500ms;
-      
+
       &:hover {
         transform: scale(1.2);
       }
     }
+
+    img {
+      object-fit: cover;
+    }
   }
 }
-
-
-
