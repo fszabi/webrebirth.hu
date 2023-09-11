@@ -10,14 +10,14 @@
   text-transform: uppercase;
   text-decoration: none;
   font-weight: $fw-700;
-  
+
   &--primary {
     position: relative;
     isolation: isolate;
     overflow: hidden;
     color: clr(neutral, 900);
     background-image: gradients(linear, 400);
-    transition: background-color 300ms;
+    transition: background-color 300ms, transform 250ms;
 
     & > span {
       position: absolute;
@@ -72,7 +72,7 @@
 
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       z-index: -2;
       top: 0;
       right: 0;
@@ -81,12 +81,17 @@
       border-radius: 50px;
       opacity: 0;
       background-image: gradients(linear, 100);
-      transition: opacity 300ms;   
+      transition: opacity 300ms;
     }
 
     &:hover::after,
     &:focus-visible::after {
       opacity: 1;
+    }
+
+    &:hover,
+    &:focus-visible {
+      transform: scale(1.05);
     }
   }
 
@@ -98,7 +103,7 @@
     color: clr(neutral, 100);
     background-color: transparent;
     transition: background-color 250ms, color 250ms;
-    
+
     &:is(:hover, :focus-visible) {
       background-color: clr(neutral, 100);
       color: clr(neutral, 900);
@@ -109,10 +114,10 @@
     z-index: 9999;
     overflow: hidden;
     border: 3px solid var(--hamburger-color, #fff);
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     padding: 0;
     background: transparent;
-   
+
     --hamburger-color: #{$clr-neutral-100};
 
     .hamburger-icon {
@@ -121,7 +126,7 @@
 
     &[aria-expanded="true"] .hamburger-icon {
       translate: 2px -2px;
-      rotate: .125turn;
+      rotate: 0.125turn;
     }
 
     .line {
@@ -152,12 +157,17 @@
     background: 0;
     padding: 0;
     font-size: fs(700);
-    color: clr(primary, 300); 
-    transition: visibility 250ms, opacity 250ms;
+    color: clr(primary, 300);
+    transition: visibility 250ms, opacity 250ms, transform 250ms;
 
     &.visible {
       visibility: visible;
       opacity: 1;
+    }
+
+    &:hover,
+    &:focus-visible {
+      transform: scale(1.2);
     }
   }
 }
