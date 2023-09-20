@@ -118,6 +118,37 @@ function hideNav() {
   nav.setAttribute("data-visible", "false");
 }
 
+if (window.innerWidth < 960) {
+  navcontainer.setAttribute("data-visible", "false");
+  nav.setAttribute("data-visible", "false");
+  hamburger.setAttribute("aria-expanded", "false");
+} else {
+  navcontainer.removeAttribute("data-visible");
+  nav.removeAttribute("data-visible");
+  hamburger.removeAttribute("aria-expanded");
+}
+
+window.addEventListener("resize", function () {
+  const currentState = hamburger.getAttribute("data-state");
+
+  const visibility =
+    nav.getAttribute("data-visible") &&
+    navcontainer.getAttribute("data-visible");
+
+  if (window.innerWidth < 960) {
+    if (currentState === "closed" || !currentState) {
+      navcontainer.setAttribute("data-visible", "false");
+      nav.setAttribute("data-visible", "false");
+      hamburger.setAttribute("aria-expanded", "false");
+    }
+  } else {
+    navcontainer.removeAttribute("data-visible");
+    nav.removeAttribute("data-visible");
+    hamburger.removeAttribute("aria-expanded");
+    hamburger.removeAttribute("data-state");
+  }
+});
+
 hamburger.addEventListener("click", () => {
   const currentState = hamburger.getAttribute("data-state");
   const visibility =
