@@ -131,10 +131,6 @@ if (window.innerWidth < 960) {
 window.addEventListener("resize", function () {
   const currentState = hamburger.getAttribute("data-state");
 
-  const visibility =
-    nav.getAttribute("data-visible") &&
-    navcontainer.getAttribute("data-visible");
-
   if (window.innerWidth < 960) {
     if (currentState === "closed" || !currentState) {
       navcontainer.setAttribute("data-visible", "false");
