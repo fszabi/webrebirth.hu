@@ -147,19 +147,12 @@ window.addEventListener("resize", function () {
 
 hamburger.addEventListener("click", () => {
   const currentState = hamburger.getAttribute("data-state");
-  const visibility =
-    nav.getAttribute("data-visible") &&
-    navcontainer.getAttribute("data-visible");
 
   if (!currentState || currentState === "closed") {
     openNav();
-  } else {
-    closeNav();
-  }
-
-  if (visibility === "false") {
     showNav();
   } else {
+    closeNav();
     hideNav();
   }
 });
