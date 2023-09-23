@@ -1,21 +1,21 @@
 @use "../abstracts/" as *;
 
 .services {
-  --grid-gap: 5rem;
+  --grid-gap: 1rem;
 
   .even-columns > .even-columns {
     --grid-gap: 3rem;
   }
 
   ul {
-    --flex-row-gap: .5em;
+    --flex-row-gap: 0.5em;
     padding-left: 1em;
 
     li {
-      padding-left: .5em;
+      padding-left: 0.5em;
       list-style-type: "✔";
-      
-      &::marker {  
+
+      &::marker {
         content: "\f00c";
         font-family: "Font Awesome 6 Free";
         font-weight: 700;
@@ -32,6 +32,3 @@
     }
   }
 }
-
-
-
