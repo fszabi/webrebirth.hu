@@ -29,10 +29,11 @@
 .services {
   .even-columns {
     grid-auto-flow: row;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(200px, 400px));
 
     & > div {
       grid-template-columns: 1fr;
+      grid-template-rows: min-content;
     }
   }
 }
