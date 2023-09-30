@@ -1,19 +1,46 @@
 @use "../abstracts/" as *;
 
 .hero {
-  background: gradients(linear, 900),
-  url("../assets/hero.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  // background: gradients(linear, 900), url("../assets/hero.jpg");
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
   min-height: 100vh;
   min-height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .even-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    --grid-gap: 3em;
+
+    h1 {
+      transform: rotate(-5deg);
+    }
+
+    .img-container {
+      position: relative;
+      grid-column: 1 / -1;
+      overflow: hidden;
+    }
+
+    img {
+      max-height: 500px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .button-container {
+      position: absolute;
+      left: 50px;
+      bottom: 50px;
+    }
+  }
 }
 
 .hero {
-  background-image: gradients(linear, 900),
-  -webkit-image-set(url("../assets/hero.webp") 1x);
+  // background-image: gradients(linear, 900),
+  //   -webkit-image-set(url("../assets/hero.webp") 1x);
 }
