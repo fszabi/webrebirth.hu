@@ -9,9 +9,13 @@
   min-height: 100dvh;
 
   .even-columns {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-flow: row;
+    grid-template-columns: 1fr;
     --grid-gap: 3em;
+
+    @include mqMin(medium) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-flow: row;
+    }
 
     h1 {
       transform: rotate(-5deg);
@@ -19,8 +23,9 @@
 
     .img-container {
       position: relative;
-      grid-column: 1 / -1;
       overflow: hidden;
+      display: grid;
+      grid-column: 1 / -1;
     }
 
     img {
@@ -31,8 +36,11 @@
 
     .button-container {
       position: absolute;
-      left: 50px;
-      bottom: 50px;
+      align-self: end;
+
+      i {
+        margin-left: 0.5rem;
+      }
     }
   }
 }
