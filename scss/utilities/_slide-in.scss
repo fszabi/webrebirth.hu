@@ -12,7 +12,6 @@
   .from-left,
   .from-right {
     opacity: 0;
-    transition: transform 500ms ease-in, opacity 250ms ease-in;
 
     &.appear {
       transform: translateX(0);
