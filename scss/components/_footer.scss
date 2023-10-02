@@ -3,7 +3,8 @@
 .primary-footer {
   --grid-gap: #{size(80)};
 
-  h2, h3 {
+  h2,
+  h3 {
     color: clr(primary, 300);
   }
 
