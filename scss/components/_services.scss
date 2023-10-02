@@ -7,6 +7,10 @@
 
     // service & slide-in transitions
 
+    .service-img-container {
+      transition: transform 500ms ease-in;
+    }
+
     &:hover,
     &:focus {
       transform: scale(1.02);
