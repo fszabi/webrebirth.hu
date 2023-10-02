@@ -13,7 +13,7 @@
     --grid-gap: 3em;
 
     @include mqMin(medium) {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr minmax(200px, 350px) minmax(200px, 350px);
       grid-auto-flow: row;
     }
 
