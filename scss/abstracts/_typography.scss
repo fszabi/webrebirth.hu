@@ -13,6 +13,6 @@ $font-sizes: (
   600: clamp(1.4rem, 0.5rem + 3vw, 1.6875rem),
   500: 1.3125rem,
   450: clamp(1.125rem, 0.5rem + 2vw, 1.3125rem),
-  400: 1.125rem,
+  400: clamp(1rem, 0.5rem + 2vw, 1.125rem),
   300: 1rem,
 );

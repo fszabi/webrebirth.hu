@@ -3,8 +3,25 @@
 .services {
   --grid-gap: 6rem;
 
-  .even-columns > .even-columns {
-    --grid-gap: 2rem;
+  .even-columns {
+    grid-auto-flow: row;
+    // grid-template-columns: repeat(3, minmax(200px, 400px));
+    grid-template-columns: 1fr;
+
+    & > div {
+      grid-template-columns: 1fr;
+
+      @include mqMin(medium) {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      // grid-template-columns: 1fr;
+      // grid-template-rows: min-content;
+    }
+
+    & > .even-columns {
+      --grid-gap: 2rem;
+    }
   }
 
   ul {

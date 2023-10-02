@@ -30,6 +30,7 @@
 
     img {
       max-height: 400px;
+      min-height: 200px;
       width: 100%;
       object-fit: cover;
     }
@@ -37,6 +38,12 @@
     .button-container {
       position: absolute;
       align-self: end;
+
+      @include mqMax(small) {
+        padding: 0;
+        justify-self: center;
+        align-self: center;
+      }
 
       i {
         margin-left: 0.5rem;
