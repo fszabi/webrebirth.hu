@@ -26,6 +26,10 @@
       overflow: hidden;
       display: grid;
       grid-column: 1 / -1;
+
+      @include mqMax(small) {
+        place-items: center;
+      }
     }
 
     img {
@@ -37,12 +41,13 @@
 
     .button-container {
       position: absolute;
-      align-self: end;
+
+      @include mqMin(medium) {
+        align-self: end;
+      }
 
       @include mqMax(small) {
         padding: 0;
-        align-self: center;
-        justify-self: center;
       }
 
       i {
