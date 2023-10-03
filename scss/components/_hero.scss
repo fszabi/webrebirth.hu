@@ -41,7 +41,8 @@
 
       @include mqMax(small) {
         padding: 0;
-        place-self: center;
+        align-self: center;
+        justify-self: center;
       }
 
       i {
