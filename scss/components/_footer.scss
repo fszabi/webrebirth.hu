@@ -11,17 +11,24 @@
   .contact {
     display: flex;
     flex-direction: column;
-    row-gap: size(4);
+    row-gap: size(8);
 
     p {
       display: flex;
       justify-content: center;
       align-items: center;
-      column-gap: size(8);
+      column-gap: size(12);
     }
-  }
 
-  .copyright {
-    margin-top: size(36) * 1.5;
+    .phone,
+    .email {
+      transition: transform 250ms, color 250ms;
+
+      &:hover,
+      &:focus {
+        transform: scale(1.05);
+        color: clr(primary, 300);
+      }
+    }
   }
 }

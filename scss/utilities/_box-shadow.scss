@@ -2,11 +2,13 @@
 
 .box-shadow-1 {
   // box-shadow: rgb(0, 0, 0, 0.5) 0px 0px 10px;
-  box-shadow: 0 0 .75rem rgb(0 0 0 / .25);
+  box-shadow: 0 0 0.75rem rgb(0 0 0 / 0.25);
 }
 
 .box-shadow-2 {
-  box-shadow: rgb(#ffaf02, 0.5) 10px 10px 10px;
+  box-shadow: 0.625rem 0.625rem 0.625rem rgb(#ffaf02, 0.5);
 }
 
-
+.box-shadow-3 {
+  box-shadow: 0 0 1.5rem rgb(#ffaf02, 0.5);
+}
