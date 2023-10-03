@@ -59,7 +59,6 @@
 }
 
 .secondary-navigation {
-  display: flex;
-  flex-direction: column;
-  row-gap: size(4);
+  display: grid;
+  row-gap: size(8);
 }
