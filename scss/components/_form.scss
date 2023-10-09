@@ -14,10 +14,12 @@ button {
 
   display: grid;
   overflow: hidden;
-  grid-template-rows: minmax(200px, 1fr);
+  grid-template-columns: 1fr 1fr;
 
-  @include mqMin(medium) {
-    grid-template-columns: 1fr 1fr;
+  @include mqMax(medium) {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(200px, 1fr) 2fr;
+    grid-auto-flow: row;
   }
 
   .form-bg {

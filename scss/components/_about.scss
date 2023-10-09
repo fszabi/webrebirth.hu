@@ -2,14 +2,12 @@
 
 .about {
   --grid-gap: 5rem;
+  --auto-fit-min: 23rem;
 
   picture,
   img {
     object-fit: cover;
-
-    @include mqMin(medium) {
-      height: 100%;
-    }
+    height: 100%;
 
     @include mqMax(600px) {
       aspect-ratio: 1/1;
