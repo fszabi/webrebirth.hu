@@ -28,7 +28,7 @@ const headerObserver = new IntersectionObserver(
     header.classList.toggle("box-shadow-1", !entries[0].isIntersecting);
     logo.classList.toggle("z-index-100", !entries[0].isIntersecting);
   },
-  { rootMargin: "200px 0px 0px 0px" }
+  { rootMargin: "50px 0px 0px 0px" }
 );
 
 headerObserver.observe(scrollWatcher);
