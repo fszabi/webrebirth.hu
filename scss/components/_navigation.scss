@@ -41,7 +41,6 @@
   padding: size(160) size(32);
 
   @include mqMin(medium) {
-    background-color: transparent !important;
     position: unset;
     flex-direction: row;
     transform: translateX(0);
