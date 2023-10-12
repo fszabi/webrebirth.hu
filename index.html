@@ -695,11 +695,27 @@
 
     <!-- Insights Analytics -->
 
-    <script src="https://getinsights.io/js/insights.js"></script>
+    <!-- <script src="https://getinsights.io/js/insights.js"></script>
     <script>
       insights.init("ZLNGy7GVDga1olZB");
       insights.trackPages();
+    </script> -->
+
+    <script src="https://swetrix.org/swetrix.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        swetrix.init("YOUR_PROJECT_ID");
+        swetrix.trackViews();
+      });
     </script>
+
+    <noscript>
+      <img
+        src="https://api.swetrix.com/log/noscript?pid=YOUR_PROJECT_ID"
+        alt=""
+        referrerpolicy="no-referrer-when-downgrade"
+      />
+    </noscript>
 
     <!-- JS -->
 
