@@ -1,12 +1,6 @@
 @use "../abstracts/" as *;
 
 .hero {
-  // background: gradients(linear, 900), url("../assets/hero.jpg");
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // min-height: 100vh;
-  // min-height: 100dvh;
   padding-top: size(160);
 
   .grid-auto-fit {
@@ -51,9 +45,4 @@
       }
     }
   }
-}
-
-.hero {
-  // background-image: gradients(linear, 900),
-  //   -webkit-image-set(url("../assets/hero.webp") 1x);
 }
