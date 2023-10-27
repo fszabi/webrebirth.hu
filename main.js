@@ -6,9 +6,9 @@ const logo = document.querySelector(".logo");
 
 const scrollButton = document.querySelector(".btn--scroll-top");
 
-const faders = document.querySelectorAll(".fade-in");
+const fadeElements = document.querySelectorAll(".fade-in");
 
-const sliders = document.querySelectorAll(".slide-in");
+const scaleElements = document.querySelectorAll(".scale-up");
 
 const lazyImages = document.querySelectorAll(".lazy-img");
 
@@ -78,14 +78,14 @@ const appearOnScroll = new IntersectionObserver(function (
 },
 appearOptions);
 
-faders.forEach((fader) => {
-  appearOnScroll.observe(fader);
+fadeElements.forEach((fadeElement) => {
+  appearOnScroll.observe(fadeElement);
 });
 
 // Slide in
 
-sliders.forEach((slider) => {
-  appearOnScroll.observe(slider);
+scaleElements.forEach((scaleElement) => {
+  appearOnScroll.observe(scaleElement);
 });
 
 // Nav events

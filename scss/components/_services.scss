@@ -2,10 +2,7 @@
 
 .services {
   .service {
-    transition: transform 500ms ease-in, background-color 500ms,
-      opacity 250ms ease-in;
-
-    // service & slide-in transitions
+    transition: transform 500ms ease-in, opacity 500ms, background-color 500ms;
 
     .service-img-container {
       transition: transform 500ms ease-in;

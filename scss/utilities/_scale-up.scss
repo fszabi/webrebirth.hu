@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+
+@include mqMin(medium) {
+  .scale-up {
+    transform: scale(0.5);
+    opacity: 0;
+
+    &.appear {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
