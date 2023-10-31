@@ -278,7 +278,7 @@
 
           <div class="grid-auto-fit flow-row">
             <div
-              class="service even-columns | slide-in from-left bg-neutral-700 border-radius-1 box-shadow-1"
+              class="service even-columns | scale-up bg-neutral-700 border-radius-1 box-shadow-1"
             >
               <div class="service-img-container">
                 <picture>
@@ -317,7 +317,7 @@
             </div>
 
             <div
-              class="service even-columns | slide-in from-right bg-neutral-700 border-radius-1 box-shadow-1"
+              class="service even-columns | scale-up bg-neutral-700 border-radius-1 box-shadow-1"
             >
               <div class="service-img-container">
                 <picture>
@@ -355,7 +355,7 @@
             </div>
 
             <div
-              class="service even-columns | slide-in from-left bg-neutral-700 border-radius-1 box-shadow-1"
+              class="service even-columns | scale-up bg-neutral-700 border-radius-1 box-shadow-1"
             >
               <div class="service-img-container">
                 <picture>
@@ -391,7 +391,7 @@
             </div>
 
             <div
-              class="service even-columns | slide-in from-right bg-neutral-700 border-radius-1 box-shadow-1"
+              class="service even-columns | scale-up bg-neutral-700 border-radius-1 box-shadow-1"
             >
               <div class="service-img-container">
                 <picture>
@@ -544,11 +544,17 @@
                   />
                 </div>
                 <div class="form-group">
-                  <label for="email">Email cím</label>
+                  <label for="email">
+                    Email cím
+                    <i
+                      class="fa-sharp fa-solid fa-star-of-life | clr-primary-300 margin-inline-4"
+                    ></i>
+                  </label>
                   <input
                     id="email"
                     name="email"
                     type="email"
+                    required
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                     title="Hibás email formátum."
                   />
@@ -710,7 +716,6 @@
       data-key="UMxc9xOr9l"
       data-tracking-host="https://events.usermaven.com"
       data-autocapture="true"
-      data-privacy-policy="strict"
       defer
     ></script>
     <script>
