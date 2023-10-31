@@ -726,6 +726,18 @@
         };
     </script>
 
+    <script>
+      (function (sal, on, ic) {
+        var js,
+          fjs = sal.getElementsByTagName(on)[0];
+        if (sal.getElementById(ic)) return;
+        js = sal.createElement(on);
+        js.id = ic;
+        js.src = "https://webrebirth.salonic.hu/widget.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script");
+    </script>
+
     <!-- *JS -->
 
     <script async type="module" src="main.js"></script>
