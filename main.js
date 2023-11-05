@@ -20,8 +20,6 @@ header.before(scrollWatcher);
 
 const headerObserver = new IntersectionObserver(
   (entries) => {
-    console.log(entries);
-
     // Toggle header color and box-shadow
 
     header.classList.toggle("sticky", !entries[0].isIntersecting);
@@ -37,8 +35,6 @@ headerObserver.observe(scrollWatcher);
 
 const scrollButtonObserver = new IntersectionObserver(
   (entries) => {
-    console.log(entries);
-
     // Toggle scrollButton visibility
 
     scrollButton.classList.toggle("visible", !entries[0].isIntersecting);
