@@ -1,3 +1,5 @@
+@use "../abstracts/" as *;
+
 *,
 *::before,
 *::after {
@@ -17,6 +19,15 @@ picture,
 svg {
   display: block;
   max-width: 100%;
+}
+
+img {
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: size(12);
 }
 
 a {
