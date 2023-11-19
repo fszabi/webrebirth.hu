@@ -6,22 +6,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-block-end: size(36) * 3;
 
     a {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: .5em;
+      gap: 0.5em;
       cursor: pointer;
       border-radius: 50%;
       width: 10rem;
       height: 10rem;
       transition: transform 500ms;
-      
+
       &:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
       }
     }
   }
