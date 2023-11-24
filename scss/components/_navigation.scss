@@ -5,11 +5,13 @@
   --flex-column-gap: #{size(48)};
 
   li {
-    transition: transform 250ms;
+    @include mqMin(medium) {
+      transition: transform 250ms;
 
-    &:hover,
-    &:focus {
-      transform: scale(1.05);
+      &:hover,
+      &:focus {
+        transform: scale(1.05);
+      }
     }
   }
 
