@@ -1,8 +1,7 @@
 @use "../abstracts/" as *;
 
 .success-body {
-  background: gradients(linear, 900),
-  url("../assets/success.jpg");
+  background: gradients(linear, 900), url("../assets/success.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,16 +11,22 @@
   padding: size(32);
 
   .success {
+    --flex-column-gap: #{size(12)};
     padding: size(32);
-  
-    a {
-      display: block;
+
+    .icon {
+      height: size(36);
+      width: size(36);
+    }
+
+    .icon-2 {
+      height: size(28);
+      width: size(28);
     }
   }
 }
 
 .success-body {
   background-image: gradients(linear, 900),
-  -webkit-image-set(url("../assets/success.webp") 1x);
+    -webkit-image-set(url("../assets/success.webp") 1x);
 }
-
