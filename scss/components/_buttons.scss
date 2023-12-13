@@ -3,7 +3,7 @@
 .btn {
   display: block;
   border: 0;
-  border-radius: 50px;
+  border-radius: 9999px;
   cursor: pointer;
   padding: 1em 1.5em;
   line-height: 1;
@@ -156,9 +156,9 @@
     opacity: 0;
     border: 0;
     background: 0;
-    padding: 0;
+    padding: size(4);
     font-size: fs(700);
-    color: clr(primary, 300);
+    background-color: clr(primary, 300);
     transition: visibility 250ms, opacity 250ms, transform 250ms, color 250ms;
 
     &.visible {
@@ -169,7 +169,12 @@
     &:hover,
     &:focus-visible {
       transform: scale(1.2);
-      color: clr(neutral, 100);
+      background-color: clr(neutral, 100);
+    }
+
+    .icon {
+      width: size(32);
+      height: size(32);
     }
   }
 }

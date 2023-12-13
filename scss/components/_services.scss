@@ -26,18 +26,16 @@
   }
 
   ul {
-    --flex-row-gap: 0.5em;
-    padding-left: 1em;
+    --flex-row-gap: #{size(12)};
 
     li {
-      padding-left: 0.5em;
-      list-style-type: "✔";
-
-      &::marker {
-        content: "\f00c";
-        font-family: "Font Awesome 6 Free";
-        font-weight: 700;
-        color: clr(primary, 300);
+      display: flex;
+      gap: size(12);
+      &::before {
+        margin-top: size(4);
+        height: size(24);
+        width: size(24);
+        content: url("../../assets/svgs/check.svg");
       }
     }
   }

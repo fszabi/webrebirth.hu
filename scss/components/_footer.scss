@@ -21,6 +21,11 @@
       column-gap: size(12);
     }
 
+    .icon {
+      width: size(22);
+      height: size(22);
+    }
+
     .phone,
     .email {
       transition: transform 250ms, color 250ms;

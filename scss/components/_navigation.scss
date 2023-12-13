@@ -5,6 +5,8 @@
   --flex-column-gap: #{size(48)};
 
   li {
+    font-weight: $fw-500;
+
     @include mqMin(medium) {
       transition: transform 250ms;
 
@@ -18,7 +20,6 @@
   a {
     text-decoration: none;
     color: clr(neutral, 100);
-    font-size: fs(300);
     transition: color 250ms;
 
     &:hover,

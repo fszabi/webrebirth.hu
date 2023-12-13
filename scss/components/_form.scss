@@ -44,6 +44,12 @@ button {
       gap: 0.5em;
     }
 
+    .icon {
+      display: inline-block;
+      margin-left: size(2);
+      margin-bottom: size(4);
+    }
+
     label {
       width: 100%;
       display: block;
