@@ -1,0 +1,9 @@
+.quote {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  a {
+    width: fit-content;
+  }
+}

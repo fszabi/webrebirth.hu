@@ -97,17 +97,17 @@
   }
 
   &--secondary {
-    --outline-size: 5px;
+    --outline-size: 2px;
 
     outline: var(--outline-size) solid clr(neutral, 100);
     outline-offset: calc(var(--outline-size) * -1);
-    color: clr(neutral, 100);
-    background-color: transparent;
+    color: clr(neutral, 900);
+    background-color: clr(neutral, 100);
     transition: background-color 250ms, color 250ms;
 
     &:is(:hover, :focus-visible) {
-      background-color: clr(neutral, 100);
-      color: clr(neutral, 900);
+      background-color: transparent;
+      color: clr(neutral, 100);
     }
   }
 
