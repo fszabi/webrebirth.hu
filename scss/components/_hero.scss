@@ -5,6 +5,11 @@
 
   .grid-auto-fit {
     --grid-gap: 3em;
+    --auto-fit-min: 20rem;
+
+    @include mqMin(large) {
+      --auto-fit-min: 23rem;
+    }
 
     h1 {
       transform: rotate(-5deg);
